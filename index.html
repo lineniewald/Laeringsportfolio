@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Læringsportfolio</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="." target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+    </header>
+
+    <div id="gridforside">
+        <section id="design">
+                <p><a href="." target="_self"><button class="linkknap" id="linktildesign">Design</button></a></p>
+        </section>
+        <section id="kode">
+            <p><a href="." target="_self"><button class="linkknap" id="linktilkode">Kode</button></a></p>
+        </section>
+        <section id="kommunikation">
+            <p><a href="." target="_self"><button class="linkknap" id="linktilkommunikation">Kommunikation</button></a></p>
+        </section>
+        <section id="lovgivning">
+            <p><a href="." target="_self"><button class="linkknap" id="linktillovgivning">Lovgivning</button></a></p>
+        </section>
+        <section id="vaerktoejer">
+            <p><a href="." target="_self"><button class="linkknap" id="linktilvaerktoejer">Værktøjer</button></a></p>
+        </section>
+    </div>
+
+    <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+            <!--<section class="centered">Læringsportfolio</section>-->
+        </section>
+    </footer>
+</body>
+
+
+</html>

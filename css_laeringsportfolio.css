@@ -1,0 +1,224 @@
+/* RESET START */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1.1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/*  RESET SLUT */
+
+
+/* BODY START*/
+body {
+    font-family: tahoma;
+    background-color: white;
+}
+/* BODY SLUT */
+
+
+/* HEADER START */
+    .headercontainer {
+        position: relative;
+        text-align: center;
+        color: #ca956f;
+    }
+        .centered {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: freestyle script;
+        font-size: 35pt;
+        color: #D4A686;
+        }
+/* HEADER SLUT */
+
+
+/* FOOTER START */
+.footercontainer {
+    position: relative;
+    text-align: center;
+  }
+/* FOOTER SLUT */
+
+
+/* FORSIDE START */
+#gridforside {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 3em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "design"
+    "kode"
+    "kommunikation"
+    "lovgivning"
+    "vaerktoejer"
+    ;
+}
+
+.linkknap { 
+    background-color: #E1C2AC;
+    width: 6cm;
+    height: 3cm;
+    border: none;
+    color: #ca956f;
+    padding: 20px;
+    text-align: center;
+    font-size: 20pt;
+    margin: center;
+    transition: 0.3s;
+    border: 4px solid #D4A686;
+    border-radius: 10px; /* Runde hjørner */
+    cursor: pointer; /* Musemarkør ved hover */
+  }
+  
+    .linkknap:hover { /* Link knap til webshop */
+        background-color: #D4A686;
+        color: #E1C2AC;
+    }
+    
+
+#design {
+   grid-area: design; 
+}
+
+#kode {
+    grid-area: kode;
+}
+
+#kommunikation {
+    grid-area: kommunikation;
+}
+
+#lovgivning {
+    grid-area: lovgivning;
+}
+
+#vaerktoejer {
+    grid-area: vaerktoejer;
+    margin-bottom: 3em;
+}
+
+/* FORSIDE SLUT */
+
+
+
+/* TIL TOPPEN KNAP START */
+#tiltop {
+    display: none; /* Skjult - default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Knap placeres i bunden af sitet */
+    right: 20px; /* Knap placeres 20px fra højre side */
+    z-index: 99; /* Sikrer at den ikke overlapper */
+    border: none; /* Fjerner borders */
+    outline: none; /* Fjerner outline */
+    background-color: #E1C2AC; /* Baggrundsfarve */
+    color: #D4A686; /* Tekst farve */
+    cursor: pointer; /* Musemarkør ved hover */
+    padding: 4px 13px; /* Padding */
+    border: 4px solid #D4A686;
+    border-radius: 10px; /* Runde hjørner */
+    font-size: 20pt; /* Font størrelse */
+    font-weight: bold;
+  }
+  
+  #tiltop:hover {
+    background-color: #D4A686; 
+    color: #E1C2AC;
+  }
+  /* TIL TOPPEN KNAP SLUT */
+
+
+
+/* TABLET START */
+@media screen and (min-width: 769px) { /*En vandret telefon svarer til ca. 768px, derfor sættes denne til 769px, for at beholde mobilversion på telefon om den vender lodret eller vandret */
+/* HEADER START */
+  .centered {
+    font-size: 55pt;
+  }
+/* HEADER SLUT */
+
+    /* FORSIDE START */
+    #gridforside {
+        margin-top: 5em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "design kode" 
+        "kommunikation lovgivning" 
+        "vaerktoejer ."
+        ;
+    }
+
+    .linkknap { 
+        width: 8cm;
+        height: 4cm;
+        margin:auto;
+        border: none;
+        padding: 30px;
+        font-size: 25pt;
+        border: 4px solid #D4A686;
+      }
+    /* FORSIDE SLUT */
+}
+/* TABLET SLUT */
+
+
+/* DESKTOP START */
+@media screen and (min-width: 1100px) { 
+    /* HEADER START */
+        .centered {
+            font-size: 75pt;
+        }
+    /* HEADER SLUT */
+
+    /* FORSIDE START */
+        #gridforside {
+            margin-top: 5em;
+            margin-bottom: 3em;
+            grid-gap: 3em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "design kode kommunikation"
+            "lovgivning vaerktoejer ."
+            ;
+        }
+
+        .linkknap { 
+            width: 10cm;
+            height: 5cm;
+            margin:auto;
+            border: none;
+            padding: 40px;
+            font-size: 30pt;
+            border: 4px solid #D4A686;
+          }
+    /* FORSIDE SLUT */
+
+}
+/* DESKTOP SLUT */
+    
