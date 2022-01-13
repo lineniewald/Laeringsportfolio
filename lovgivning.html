@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Læringsportfolio</title>
+    <title>Lovgivning</title>
 
     <link rel="stylesheet" href="css_laeringsportfolio.css">
 </head>
@@ -17,23 +17,36 @@
             <img src="header1.png" alt="header" style="width:100%;">
             <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
         </section>
+
+        <!-- TOP NAVIGATION -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a class="active" href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
     </header>
 
-    <div id="gridforside">
-        <section id="design">
-                <p><a href="design.html" target="_self"><button class="linkknap" id="linktildesign">Design</button></a></p>
-        </section>
-        <section id="kode">
-            <p><a href="kode.html" target="_self"><button class="linkknap" id="linktilkode">Kode</button></a></p>
-        </section>
-        <section id="kommunikation">
-            <p><a href="kommunikation.html" target="_self"><button class="linkknap" id="linktilkommunikation">Kommunikation</button></a></p>
-        </section>
-        <section id="lovgivning">
-            <p><a href="lovgivning.html" target="_self"><button class="linkknap" id="linktillovgivning">Lovgivning</button></a></p>
-        </section>
-        <section id="vaerktoejer">
-            <p><a href="vaerktoejer.html" target="_self"><button class="linkknap" id="linktilvaerktoejer">Værktøjer</button></a></p>
+    <!-- TILBAGE KNAP MOBIL -->
+    <a href="index.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+
+    <!-- BRØDKRUMMER -->
+    <section>
+        <ul class="breadcrumb">
+        <li><a href="index.html">Forside</a></li>
+        <li>Lovgivning</li>
+        </ul>
+    </section>
+
+    <section class="overskriftside">Lovgivning</section>
+
+    <div id="gridlovgivning">
+        <section id="immaterielret">
+                <p><a href="." target="_self"><button class="linkknap" id="linktilimmaterielret">Immaterielret</button></a></p>
         </section>
     </div>
 

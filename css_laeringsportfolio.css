@@ -40,7 +40,7 @@ body {
     .headercontainer {
         position: relative;
         text-align: center;
-        color: #ca956f;
+        color: #D4A686;
     }
         .centered {
         position: absolute;
@@ -53,31 +53,80 @@ body {
         }
 /* HEADER SLUT */
 
-
-/* FOOTER START */
-.footercontainer {
-    position: relative;
-    text-align: center;
-  }
-/* FOOTER SLUT */
-
-
-/* FORSIDE START */
-#gridforside {
-    display: grid;
-    grid-gap: 1em;
-    margin-top: 3em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "design"
-    "kode"
-    "kommunikation"
-    "lovgivning"
-    "vaerktoejer"
-    ;
+/* TILBAGE KNAP START */
+.tilbageknap {
+    width: 10%;
+    height: auto;
+    margin-left: 10px;
 }
+/* TILBAGE KNAP SLUT */
 
+/* TOP NAVIGATION START */
+.topnav {
+    overflow: hidden;
+    display: none;
+  }
+  
+  .topnav a { /* Links i nav bar*/
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover { /* Farven på hover over links */
+    color: #D4A686;
+  }
+  
+  .topnav a.active { /* Det "aktive" element - fremhæv siden man er på */
+    color: #D4A686;
+    font-weight: bold;
+  }
+  
+  .topnav input[type=text] { /* Søgeboksen i nav bar */
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    text-align: right;
+    font-size: 17px;
+  }
+/* TOP NAVIGATION SLUT */
+
+/* BRØDKRUMMER START */
+    ul.breadcrumb { 
+        padding: 10px 16px;
+        list-style: none;
+        display: none;
+    }
+  
+    ul.breadcrumb li { /* Elementerne vises ved siden af hinanden */
+        display: inline;
+        font-size: 12px;
+    }
+  
+    ul.breadcrumb li+li:before { /* Symbol imellem elementerne */
+        padding: 8px;
+        color: #D4A686;
+        content: "-\00a0";
+    }
+  
+    ul.breadcrumb li a { /* Farve på links */
+        color: #D4A686;
+        text-decoration: none;
+    }
+  
+    ul.breadcrumb li a:hover { /* Farven på hover over links */
+        color: #D4A686;
+        text-decoration: underline;
+    }
+/* BRØDKRUMMER SLUT*/  
+
+/* Knapper med kategorier START*/
 .linkknap { 
     background-color: #E1C2AC;
     width: 6cm;
@@ -86,7 +135,7 @@ body {
     color: #ca956f;
     padding: 20px;
     text-align: center;
-    font-size: 20pt;
+    font-size: 15pt;
     margin: center;
     transition: 0.3s;
     border: 4px solid #D4A686;
@@ -98,32 +147,15 @@ body {
         background-color: #D4A686;
         color: #E1C2AC;
     }
-    
+/* Knapper med kategorier SLUT*/
 
-#design {
-   grid-area: design; 
+/* OVERSKRIFT PÅ KATEGORI SIDER START*/
+.overskriftside {
+    font-family: freestyle script;
+    font-size: 40pt;
+    color: #D4A686;
+    text-align: center;
 }
-
-#kode {
-    grid-area: kode;
-}
-
-#kommunikation {
-    grid-area: kommunikation;
-}
-
-#lovgivning {
-    grid-area: lovgivning;
-}
-
-#vaerktoejer {
-    grid-area: vaerktoejer;
-    margin-bottom: 3em;
-}
-
-/* FORSIDE SLUT */
-
-
 
 /* TIL TOPPEN KNAP START */
 #tiltop {
@@ -151,14 +183,241 @@ body {
   /* TIL TOPPEN KNAP SLUT */
 
 
+/* FOOTER START */
+.footercontainer {
+    position: relative;
+    text-align: center;
+    margin-top: 2em;
+  }
+/* FOOTER SLUT */
+
+
+/* FORSIDE START */
+#gridforside {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 3em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "design"
+    "kode"
+    "kommunikation"
+    "lovgivning"
+    "vaerktoejer"
+    ;
+}
+    
+#design {
+   grid-area: design; 
+}
+
+#kode {
+    grid-area: kode;
+}
+
+#kommunikation {
+    grid-area: kommunikation;
+}
+
+#lovgivning {
+    grid-area: lovgivning;
+}
+
+#vaerktoejer {
+    grid-area: vaerktoejer;
+    margin-bottom: 1em;
+}
+
+/* FORSIDE SLUT */
+
+
+/* DESIGN START */
+#griddesign {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "designprincipper"
+    "farveteori"
+    "typografi"
+    "aestetik"
+    ;
+}
+
+#designprincipper {
+    grid-area: designprincipper;
+}
+
+#farveteori {
+    grid-area: farveteori;
+}
+
+#typografi {
+    grid-area: typografi;
+}
+
+#aestetik {
+    grid-area: aestetik;
+}
+/* DESIGN SLUT*/
+
+/* KODE START */
+#gridkode {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "kodenssprog"
+    "kodenslayout"
+    "versionsstyring"
+    ;
+}
+
+#kodenssprog {
+    grid-area: kodenssprog;
+}
+
+#kodenslayout {
+    grid-area: kodenslayout;
+}
+
+#versionsstyring {
+    grid-area: versionsstyring;
+}
+/* KODE SLUT*/
+
+/* KOMMUNIKATION START */
+#gridkommunikation {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "kommunikationsteori"
+    "metode"
+    "praesentationsteknik"
+    "socialemedier"
+    "tekstproduktion"
+    ;
+}
+
+#kommunikationsteori {
+    grid-area: kommunikationsteori;
+}
+
+#metode {
+    grid-area: metode;
+}
+
+#praesentationsteknik {
+    grid-area: praesentationsteknik;
+}
+
+#socialemedier {
+    grid-area: socialemedier;
+}
+
+#tekstproduktion {
+    grid-area: tekstproduktion;
+}
+/* KOMMUNIKATION SLUT */
+
+/* LOVGIVNING START */
+#gridlovgivning {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "immaterielret"
+    ;
+}
+
+#immaterielret {
+    grid-area: immaterielret;
+}
+/* LOVGIVNING SLUT */
+
+/* VÆRKTØJER START */
+#gridvaerktoejer {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin-left: 7em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "designprocessen"
+    "kamera"
+    "metoder"
+    "modeller"
+    ;
+}
+
+#designprocessen {
+    grid-area: designprocessen;
+}
+
+#kamera {
+    grid-area: kamera;
+}
+
+#metoder {
+    grid-area: metoder;
+}
+
+#modeller {
+    grid-area: modeller;
+}
+/* VÆRKTØJER SLUT*/
+
+
+
 
 /* TABLET START */
 @media screen and (min-width: 769px) { /*En vandret telefon svarer til ca. 768px, derfor sættes denne til 769px, for at beholde mobilversion på telefon om den vender lodret eller vandret */
-/* HEADER START */
-  .centered {
-    font-size: 55pt;
-  }
-/* HEADER SLUT */
+
+    /* HEADER START */
+    .centered {
+        font-size: 55pt;
+    }
+    /* HEADER SLUT */
+
+    /* TOP NAVIGATION START */
+    .topnav {
+        display: inherit;
+    }
+    /* TOP NAVIGATION SLUT*/
+
+    .tilbageknap {
+        display: none;
+    }
+
+    /* BRØDKRUMME START */
+    ul.breadcrumb {
+        display: inherit;
+    }
+    /* BRØDKRUMME SLUT*/
+
+    .overskriftside {
+        font-size: 55pt;
+    }
+
+    .linkknap { 
+        width: 8cm;
+        height: 4cm;
+        margin:auto;
+        border: none;
+        padding: 30px;
+        font-size: 19pt;
+        border: 4px solid #D4A686;
+      }
 
     /* FORSIDE START */
     #gridforside {
@@ -174,16 +433,77 @@ body {
         ;
     }
 
-    .linkknap { 
-        width: 8cm;
-        height: 4cm;
-        margin:auto;
-        border: none;
-        padding: 30px;
-        font-size: 25pt;
-        border: 4px solid #D4A686;
-      }
     /* FORSIDE SLUT */
+    
+    /* DESIGN START */
+    #griddesign {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "designprincipper farveteori" 
+        "typografi aestetik" 
+        ;
+    }
+    /* DESIGN SLUT */
+
+    /* KODE START */
+    #gridkode {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "kodenssprog kodenslayout" 
+        "versionsstyring ." 
+        ;
+    }
+    /* KODE SLUT*/
+
+    /* KOMMUNIKATION START */
+    #gridkommunikation {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "kommunikationsteori metode" 
+        "praesentationsteknik socialemedier" 
+        "tekstproduktion ."
+        ;
+    }
+    /* KOMMUNIKATION SLUT */
+
+    /* LOVGIVNING START */
+    #gridlovgivning {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". immaterielret ." 
+        ;
+    }
+    /* LOVGIVNING SLUT */
+
+    /* VÆRKTØJER START*/
+    #gridvaerktoejer {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "designprocessen kamera" 
+        "metoder modeller" 
+        ;
+    }
+    /* VÆRKTØJER SLUT */
 }
 /* TABLET SLUT */
 
@@ -196,6 +516,26 @@ body {
         }
     /* HEADER SLUT */
 
+    /* TOP NAVIGATION START */
+        .topnav a {
+            padding: 20px 22px;
+        }
+    /* TOP NAVIGATION SLUT*/
+
+    .linkknap { 
+        width: 10cm;
+        height: 5cm;
+        margin:auto;
+        border: none;
+        padding: 40px;
+        font-size: 23pt;
+        border: 4px solid #D4A686;
+      }
+    
+      .overskriftside {
+        font-size: 75pt;
+    }
+
     /* FORSIDE START */
         #gridforside {
             margin-top: 5em;
@@ -207,18 +547,75 @@ body {
             "lovgivning vaerktoejer ."
             ;
         }
-
-        .linkknap { 
-            width: 10cm;
-            height: 5cm;
-            margin:auto;
-            border: none;
-            padding: 40px;
-            font-size: 30pt;
-            border: 4px solid #D4A686;
-          }
     /* FORSIDE SLUT */
 
+    /* DESIGN START */
+        #griddesign {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "designprincipper farveteori typografi" 
+            ". aestetik ." 
+            ;
+        }
+    /* DESIGN SLUT */
+    
+    /* KODE START */
+        #gridkode {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "kodenssprog kodenslayout versionsstyring" 
+            ;
+        }
+    /* KODE SLUT*/
+    
+    /* KOMMUNIKATION START */
+        #gridkommunikation {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "kommunikationsteori metode praesentationsteknik" 
+            "socialemedier tekstproduktion ." 
+            ;
+        }
+    /* KOMMUNIKATION SLUT */
+    
+    /* LOVGIVNING START */
+        #gridlovgivning {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            ". immaterielret ." 
+            ;
+        }
+    /* LOVGIVNING SLUT */
+    
+    /* VÆRKTØJER START*/
+        #gridvaerktoejer {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "designprocessen kamera metoder" 
+            ". modeller ." 
+            ;
+        }
+    /* VÆRKTØJER SLUT */
 }
 /* DESKTOP SLUT */
     
