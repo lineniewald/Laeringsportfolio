@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Typografi</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a class="active" href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="designprincipper.html">Designprincipper</a>
+            <a href="farveteori.html">Farveteori</a>
+            <a class="active" href="typografi.html">Typografi</a>
+            <a href="aestetik.html">Æstetik</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="typografi_fontklassifikationer.html">Font klassifikationer</a>
+            <a class="active" href="typografi_bogstavetsanatomi.html">Bogstavets anatomi</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="typografi.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Bogstavets anatomi</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridbogstavetsanatomi">
+        <section id="bogstavanatomi"> <!-- Font klassifikationer -->
+            <section id="bogstavanatomibillede">
+                <a href="https://osmanassem.com/typography-the-anatomy-of-a-letter/" target="_blank"><section><img src="bogstavetsanatomi.png" alt="typografi bogstavets anatomi" class="responsive"></section></a>
+                <a id="billedelink" href="https://osmanassem.com/typography-the-anatomy-of-a-letter/" target="_blank"><section>https://osmanassem.com/typography-the-anatomy-of-a-letter/</section></a>
+            </section>
+    </div>
+ <!-- GRID SLUT -->
+
+ <!-- KILDER START -->
+    <section id="bogstavetsanatomikilder"> <!-- Kilder -->
+        <section class="overskriftside">Kilder</section>
+        <section class="kilder">
+            <a href="https://design.tutsplus.com/articles/typography-the-anatomy-of-a-letter--cms-29828" target="_blank"><section>https://design.tutsplus.com/articles/typography-the-anatomy-of-a-letter--cms-29828</section></a> 
+        </section>
+        <section class="kilder">
+            <a href="https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/anatomy" target="_blank"><section>https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/anatomy</section></a> 
+        </section>
+        <section class="kilder">
+            <a href="https://osmanassem.com/typography-the-anatomy-of-a-letter/" target="_blank"><section>https://osmanassem.com/typography-the-anatomy-of-a-letter/</section></a> 
+        </section>
+        <section class="kilder">
+            <a href="http://typedia.com/learn/only/anatomy-of-a-typeface/" target="_blank"><section>http://typedia.com/learn/only/anatomy-of-a-typeface/</section></a> 
+        </section>
+        <section class="kilder">
+            <a href="https://visme.co/blog/type-anatomy/" target="_blank"><section>https://visme.co/blog/type-anatomy/</section></a> 
+        </section>        
+        <section class="kilder">
+            <a href="https://www.webdew.com/blog/anatomy-of-typeface" target="_blank"><section>https://www.webdew.com/blog/anatomy-of-typeface</section></a> 
+        </section>
+    </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

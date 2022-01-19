@@ -77,7 +77,6 @@ ul.breadcrumb {
     font-family: freestyle script;
     font-size: 40pt;
     margin-top: 30px;
-    margin-bottom: -10px;
     color: #D4A686;
     text-align: center;
 }
@@ -113,6 +112,7 @@ ul.breadcrumb {
     position: relative;
     text-align: center;
     margin-top: 2em;
+    color: #D4A686;
   }
 /* FOOTER SLUT */
 
@@ -157,122 +157,323 @@ ul.breadcrumb {
 /* FORSIDE SLUT */
 
 
+
 /* DESIGN START */
-#griddesign {
+
+#griddesign { /* Design forside */
     display: grid;
     grid-gap: 1em;
     margin-top: 1em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
     grid-template-areas: 
-    "designprincipper"
-    "farveteori"
-    "typografi"
-    "aestetik"
+    ". designprincipper ."
+    ". farveteori ."
+    ". typografi ."
+    ". aestetik ."
     ;
 }
-
     #designprincipper {
         grid-area: designprincipper;
     }
-
     #farveteori {
         grid-area: farveteori;
     }
-
     #typografi {
         grid-area: typografi;
     }
-
     #aestetik {
         grid-area: aestetik;
     }
 
-#griddesignprincipper {
+#griddesignprincipper { /* Designprincipper */
     display: grid;
     grid-gap: 1em;
     margin-top: 1em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
     grid-template-areas: 
-    "gestaltprincipper"
-    "kilderdesignprincipper"
+    ". gestaltprincipper ."
     ;
 }
-
     #gestaltprincipper {
         grid-area: gestaltprincipper;
     }
 
-    #kilderdesignprincipper {
-        grid-area: kilderdesignprincipper;
-    }
+        #gridgestalt {
+            display: grid;
+            margin: 1em;
+            grid-gap: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "hvadergestalt"
+            "hvorforgestalt"
+            "gestaltbillede"
+            "gestaltclosure"
+            "gestaltcommonfate"
+            "gestaltcontinuation"
+            "gestaltsimilarity"
+            "gestaltfigureground"
+            "gestaltproximity"
+            "gestaltsymmetryorder"
+            ;
+        }
+            #hvadergestalt {
+                grid-area: hvadergestalt;
+            }
+            #hvorforgestalt {
+                grid-area: hvorforgestalt;
+            }
+            #gestaltbillede {
+                grid-area: gestaltbillede;
+            }
+            #gestaltclosure {
+                grid-area: gestaltclosure;
+            }
+            #gestaltcommonfate {
+                grid-area: gestaltcommonfate;
+            }
+            #gestaltcontinuation {
+                grid-area: gestaltcontinuation;
+            }
+            #gestaltsimilarity {
+                grid-area: gestaltsimilarity;
+            }
+            #gestaltfigureground {
+                grid-area: gestaltfigureground;
+            }
+            #gestaltproximity {
+                grid-area: gestaltproximity;
+            }
+            #gestaltsymmetryorder {
+                grid-area: gestaltsymmetryorder;
+            }
+            #designprincipkilder {
+                grid-area: designprincipkilder;
+            }
 
-#gridgestalt {
+#gridfarveteori { /* Farveteori */
     display: grid;
-    margin: 1em;
     grid-gap: 1em;
-    grid-template-columns: 1fr;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
     grid-template-areas: 
-    "hvadergestalt"
-    "hvorforgestalt"
-    "gestaltbillede"
-    "gestaltclosure"
-    "gestaltcommonfate"
-    "gestaltcontinuation"
-    "gestaltsimilarity"
-    "gestaltfigureground"
-    "gestaltproximity"
-    "gestaltsymmetryorder"
-    "designprincipkilder"
-    ;
+    ". farveteori ."
+    ". farvesammensaetning ."
+    ". farvepsykologi ."
+    ; 
 }
-
-    #hvadergestalt {
-        grid-area: hvadergestalt;
+    #farveteori {
+        grid-area: farveteori;
+    }
+    #farvesammensaetning {
+        grid-area: farvesammensaetning;
+    }
+    #farvepsykologi{
+        grid-area: farvepsykologi;
     }
 
-    #hvorforgestalt {
-        grid-area: hvorforgestalt;
+        #gridfarveteorifarveteori {
+            display: grid;
+            margin: 1em;
+            grid-gap: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvaderfarveteori"
+            "hvorforfarveteori"
+            "farvehjulet"
+            "farverum"
+            "kuloermaetninglyshed"
+            ;
+        }
+            #hvaderfarveteori {
+                grid-area: hvaderfarveteori;
+            }
+            #hvorforfarveteori {
+                grid-area: hvorforfarveteori;
+            }
+            #farvehjulet {
+                grid-area: farvehjulet;
+            }
+            #farverum {
+                grid-area: farverum;
+            }
+            #kuloermaetninglyshed {
+                grid-area: kuloermaetninglyshed;
+            }
+        
+        #gridfarvesammensaetning {
+            display: grid;
+            margin: 1em;
+            grid-gap: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "komplementaerfarver"
+            "monokromfarver"
+            "analogfarver"
+            "triadefarver"
+            "tetriadefarver"
+            "splitkomplementaerfarver"
+            ;
+        }
+            #komplementaerfarver {
+                grid-area: komplementaerfarver;
+            }
+            #monokromfarver {
+                grid-area: monokromfarver;
+            }
+            #analogfarver {
+                grid-area: analogfarver;
+            }
+            #triadefarver {
+                grid-area: triadefarver;
+            }
+            #tetriadefarver {
+                grid-area: tetriadefarver;
+            }
+            #splitkomplementaerfarver {
+                grid-area: splitkomplementaerfarver;
+            }
+        
+        #gridfarvepsykologi {
+            display: grid;
+            margin: 1em;
+            grid-gap: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvaderfarvepsykologi"
+            "hvorforfarvepsykologi"
+            "farvegul"
+            "farveorange"
+            "farveroed"
+            "farvegroen"
+            "farveblaa"
+            "farvelilla"
+            "farvehvid"
+            "farvesort"
+            "colorbyculture"
+            ;
+        }
+            #hvaderfarvepsykologi {
+                grid-area: hvaderfarvepsykologi;
+            }
+            #hvorforfarvepsykologi {
+                grid-area: hvorforfarvepsykologi;
+            }
+            #farvegul {
+                grid-area: farvegul;
+            }
+            #farveorange {
+                grid-area: farveorange;
+            }
+            #farveroed {
+                grid-area: farveroed;
+            }
+            #farvegroen {
+                grid-area: farvegroen;
+            }
+            #farveblaa {
+                grid-area: farveblaa;
+            }
+            #farvelilla {
+                grid-area: farvelilla;
+            }
+            #farvehvid {
+                grid-area: farvehvid;
+            }
+            #farvesort {
+                grid-area: farvesort;
+            }
+            #colorbyculture {
+                grid-area: colorbyculture;
+            }
+
+#gridtypografi { /* Typografi */
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
+    grid-template-areas: 
+    ". fontklassifikationer ."
+    ". bogstavetsanatomi ."
+    ; 
+}
+    #fontklassifikationer {
+        grid-area: fontklassifikationer;
+    }
+    #bogstavetsanatomi {
+        grid-area: bogstavetsanatomi;
     }
 
-    #gestaltbillede {
-        grid-area: gestaltbillede;
+    #gridfontklassifikationer {
+        display: grid;
+        grid-gap: 1em;
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hvadertypografi"
+        "hvorfortypografi"
+        "fontklassifikation"
+        "typefacefont"
+        "fontstyles"
+        "fontweights"
+        ;
+    }
+        #hvadertypografi {
+            grid-area: hvadertypografi;
+        }
+        #hvorfortypografi {
+            grid-area: hvorfortypografi;
+        }
+        #fontklassifikation {
+            grid-area: fontklassifikation;
+        }
+        #typefacefont {
+            grid-area: typefacefont;
+        }
+        #fontstyles {
+            grid-area: fontstyles;
+        }
+        #fontweights {
+            grid-area: fontweights;
+        }
+
+    #gridbogstavetsanatomi {
+        display: grid;
+        grid-gap: 1em;
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "bogstavanatomi"
+        ;
+    }
+        #bogstavanatomi {
+            grid-area: bogstavanatomi;
+        }
+
+#gridaestetik { /* Æstetik */
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
+    grid-template-areas: 
+    ". aestetikiwebdesign ."
+    ; 
+}
+    #aestetikiwebdesign {
+        grid-area: aestetikiwebdesign;
     }
 
-    #gestaltclosure {
-        grid-area: gestaltclosure;
-    }
-
-    #gestaltcommonfate {
-        grid-area: gestaltcommonfate;
-    }
-
-    #gestaltcontinuation {
-        grid-area: gestaltcontinuation;
-    }
-
-    #gestaltsimilarity {
-        grid-area: gestaltsimilarity;
-    }
-
-    #gestaltfigureground {
-        grid-area: gestaltfigureground;
-    }
-
-    #gestaltproximity {
-        grid-area: gestaltproximity;
-    }
-
-    #gestaltsymmetryorder {
-        grid-area: gestaltsymmetryorder;
-    }
-
-    #designprincipkilder {
-        grid-area: designprincipkilder;
-    }
-
-
+#gridaestetikwebdesign {
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "hvaderaestetikweb"
+    "hvorforaestetikweb"
+    "aestetikfunktion"
+    "elementerwebdesign"
+    ;
+}   
 /* DESIGN SLUT*/
 
 /* KODE START */
@@ -280,26 +481,23 @@ ul.breadcrumb {
     display: grid;
     grid-gap: 1em;
     margin-top: 1em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
     grid-template-areas: 
-    "kodenssprog"
-    "kodenslayout"
-    "versionsstyring"
+    ". kodenssprog ."
+    ". kodenslayout ."
+    ". versionsstyring ."
     ;
 }
+    #kodenssprog {
+        grid-area: kodenssprog;
+    }
+    #kodenslayout {
+        grid-area: kodenslayout;
+    }
+    #versionsstyring {
+        grid-area: versionsstyring;
+    }
 
-#kodenssprog {
-    grid-area: kodenssprog;
-}
-
-#kodenslayout {
-    grid-area: kodenslayout;
-}
-
-#versionsstyring {
-    grid-area: versionsstyring;
-}
 /* KODE SLUT*/
 
 /* KOMMUNIKATION START */
@@ -307,36 +505,30 @@ ul.breadcrumb {
     display: grid;
     grid-gap: 1em;
     margin-top: 1em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
     grid-template-areas: 
-    "kommunikationsteori"
-    "metode"
-    "praesentationsteknik"
-    "socialemedier"
-    "tekstproduktion"
+    ". kommunikationsteori ."
+    ". metode ."
+    ". praesentationsteknik ."
+    ". socialemedier ."
+    ". tekstproduktion ."
     ;
 }
-
-#kommunikationsteori {
-    grid-area: kommunikationsteori;
-}
-
-#metode {
-    grid-area: metode;
-}
-
-#praesentationsteknik {
-    grid-area: praesentationsteknik;
-}
-
-#socialemedier {
-    grid-area: socialemedier;
-}
-
-#tekstproduktion {
-    grid-area: tekstproduktion;
-}
+    #kommunikationsteori {
+        grid-area: kommunikationsteori;
+    }
+    #metode {
+        grid-area: metode;
+    }
+    #praesentationsteknik {
+        grid-area: praesentationsteknik;
+    }
+    #socialemedier {
+        grid-area: socialemedier;
+    }
+    #tekstproduktion {
+        grid-area: tekstproduktion;
+    }
 /* KOMMUNIKATION SLUT */
 
 /* LOVGIVNING START */
@@ -344,16 +536,14 @@ ul.breadcrumb {
     display: grid;
     grid-gap: 1em;
     margin-top: 1em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
     grid-template-areas: 
-    "immaterielret"
+    ". immaterielret ."
     ;
 }
-
-#immaterielret {
-    grid-area: immaterielret;
-}
+    #immaterielret {
+        grid-area: immaterielret;
+    }
 /* LOVGIVNING SLUT */
 
 /* VÆRKTØJER START */
@@ -361,31 +551,26 @@ ul.breadcrumb {
     display: grid;
     grid-gap: 1em;
     margin-top: 1em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "designprocessen"
-    "kamera"
-    "metoder"
-    "modeller"
+    ". designprocessen ."
+    ". kamera ."
+    ". metoder ."
+    ". modeller ."
     ;
 }
-
-#designprocessen {
-    grid-area: designprocessen;
-}
-
-#kamera {
-    grid-area: kamera;
-}
-
-#metoder {
-    grid-area: metoder;
-}
-
-#modeller {
-    grid-area: modeller;
-}
+    #designprocessen {
+        grid-area: designprocessen;
+    }
+    #kamera {
+        grid-area: kamera;
+    }
+    #metoder {
+        grid-area: metoder;
+    }
+    #modeller {
+        grid-area: modeller;
+    }
 /* VÆRKTØJER SLUT*/
 
 
@@ -416,7 +601,10 @@ h2 {
     font-weight: normal;
 }
 
+
+
 /* TABLET START */
+
 @media screen and (min-width: 769px) { 
 
     /* HEADER START */
@@ -540,7 +728,6 @@ h2 {
 
     .overskriftside {
         font-size: 55pt;
-        margin-bottom: -30px;
     }
 
     .linkknap { 
@@ -574,8 +761,9 @@ h2 {
     /* FORSIDE SLUT */
     
 
-    /* DESIGN START */
-    #griddesign {
+/* DESIGN START */
+
+    #griddesign { /* Design forside */
         margin-top: 2em;
         margin-bottom: 3em;
         margin-left: 3em;
@@ -587,32 +775,134 @@ h2 {
         ;
     }
 
-    #griddesignprincipper {
+    #griddesignprincipper { /* Designprincipper forside */
         margin-top: 3em;
         margin-left: 3em;
         grid-gap: 2em;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "gestaltprincipper kilderdesignprincipper"
+        "gestaltprincipper ."
         ;
     }
 
-    #gridgestalt {
-        display: grid;
-        margin: 2em;
+        #gridgestalt { /* Gestaltprincipper */
+            display: grid;
+            margin: 2em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "hvadergestalt hvorforgestalt"
+            "gestaltbillede gestaltbillede"
+            "gestaltclosure gestaltcommonfate"
+            "gestaltcontinuation gestaltsimilarity"
+            "gestaltfigureground gestaltproximity"
+            "gestaltsymmetryorder ."
+            "designprincipkilder designprincipkilder"
+            ;
+        }
+
+    #gridfarveteori { /* Farveteori forside */
+        margin-top: 3em;
+        margin-left: 3em;
         grid-gap: 2em;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "hvadergestalt hvorforgestalt"
-        "gestaltbillede gestaltbillede"
-        "gestaltclosure gestaltcommonfate"
-        "gestaltcontinuation gestaltsimilarity"
-        "gestaltfigureground gestaltproximity"
-        "gestaltsymmetryorder ."
-        "designprincipkilder designprincipkilder"
+        "farveteori farvesammensaetning"
+        "farvepsykologi ."
         ;
     }
-    /* DESIGN SLUT */
+
+        #gridfarveteorifarveteori { /* Farveteori emneside */
+            margin-top: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "hvaderfarveteori hvorforfarveteori"
+            "farvehjulet farverum"
+            "kuloermaetninglyshed ."
+            ;
+        }
+
+        #gridfarvesammensaetning { /* Farvesammensætning emneside */
+            margin-top: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "komplementaerfarver monokromfarver"
+            "analogfarver triadefarver"
+            "tetriadefarver splitkomplementaerfarver"
+            ;
+        }
+
+        #gridfarvepsykologi { /* Farvepsykologi */
+            margin-top: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "hvaderfarvepsykologi hvorforfarvepsykologi"
+            "farvegul farveorange"
+            "farveroed farvegroen"
+            "farveblaa farvelilla"
+            "farvehvid farvesort"
+            "colorbyculture ."
+            ;
+        }
+
+    #gridtypografi { /* Typografi */
+        margin-top: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "fontklassifikationer bogstavetsanatomi"
+        ;
+    }
+
+        #gridfontklassifikationer {
+            margin-top: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "hvadertypografi hvorfortypografi"
+            "fontklassifikation typefacefont"
+            "fontstyles fontweights"
+            ;
+        }
+
+        #gridbogstavetsanatomi {
+            margin-top: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-areas: 
+            ". bogstavanatomi ."
+            ;
+        }
+
+    #gridaestetik {
+        margin-top: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "aestetikiwebdesign ."
+        ;
+    }
+        #gridaestetikwebdesign {
+            margin-top: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "hvaderaestetikweb hvorforaestetikweb"
+            "aestetikfunktion elementerwebdesign"
+            ;
+        }
+/* DESIGN SLUT */
 
     /* KODE START */
     #gridkode {
@@ -675,48 +965,14 @@ h2 {
 
 /* DESKTOP START */
 @media screen and (min-width: 1100px) { 
-    /* HEADER START */
-        .centered {
-            font-size: 75pt;
-        }
-    /* HEADER SLUT */
 
-    /* TOP NAVIGATION START */
-        .topnav a {
-            padding: 20px 22px;
-        }
-    /* TOP NAVIGATION SLUT*/
-
-
-/* BRØDKRUMME START */
-ul.breadcrumb { 
-    display: inherit;
-    padding: 10px 16px;
-    list-style: none;
-}
-
-ul.breadcrumb li { /* Elementerne vises ved siden af hinanden */
-    display: inline;
-    font-size: 12px;
-}
-
-ul.breadcrumb li+li:before { /* Symbol imellem elementerne */
-    padding: 8px;
-    color: #D4A686;
-    content: "-\00a0";
-}
-
-ul.breadcrumb li a { /* Farve på links */
-    color: #D4A686;
-    text-decoration: none;
-}
-
-ul.breadcrumb li a:hover { /* Farven på hover over links */
-    color: #D4A686;
-    text-decoration: underline;
-}
-/* BRØDKRUMMER SLUT*/  
-
+/* HEADER START */
+    .centered {
+        font-size: 75pt;
+    }
+/* HEADER SLUT */
+ 
+/* REGLER PÅ TVÆRS AF SIDER */
     .linkknap { 
         width: 10cm;
         height: 5cm;
@@ -744,29 +1000,30 @@ ul.breadcrumb li a:hover { /* Farven på hover over links */
         }
     /* FORSIDE SLUT */
 
-    /* DESIGN START */
-        #griddesign {
-            margin-top: 3em;
-            margin-bottom: 3em;
-            margin-left: 3em;
-            grid-gap: 2em;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: 
-            "designprincipper farveteori typografi" 
-            ". aestetik ." 
-            ;
-        }
+/* DESIGN START */
 
-        #griddesignprincipper {
-            grid-gap: 3em;
-            margin-top: 3em;
-            margin-left: 3em;
-            grid-gap: 2em;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: 
-            "gestaltprincipper kilderdesignprincipper ."
-            ;
-        }
+    #griddesign {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "designprincipper farveteori typografi" 
+        ". aestetik ." 
+        ;
+    }
+
+    #griddesignprincipper {
+        grid-gap: 3em;
+        margin-top: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". gestaltprincipper ."
+        ;
+    }
 
         #gridgestalt {
             display: grid;
@@ -782,6 +1039,102 @@ ul.breadcrumb li a:hover { /* Farven på hover over links */
             "designprincipkilder designprincipkilder designprincipkilder designprincipkilder"
             ;
         }
+
+    #gridfarveteori {
+        grid-gap: 3em;
+        margin-top: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "farveteori farvesammensaetning farvepsykologi ."
+        ; 
+    }
+        #gridfarveteorifarveteori {
+            display: grid;
+            margin: 2em;
+            grid-gap: 3em;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-areas: 
+            "hvaderfarveteori hvaderfarveteori hvorforfarveteori hvorforfarveteori"
+            "farvehjulet farverum farverum kuloermaetninglyshed"
+            ;
+        }
+
+        #gridfarvesammensaetning {
+            margin: 2em;
+            grid-gap: 3em;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-areas:
+            "komplementaerfarver monokromfarver monokromfarver analogfarver"
+            "triadefarver tetriadefarver tetriadefarver splitkomplementaerfarver"
+            ;
+        }
+
+        #gridfarvepsykologi {
+            margin: 2em;
+            grid-gap: 3em;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-areas:
+            "hvaderfarvepsykologi hvaderfarvepsykologi hvorforfarvepsykologi hvorforfarvepsykologi"
+            "farvegul farveorange farveorange farveroed"
+            "farvegroen farveblaa farveblaa farvelilla"
+            "farvehvid farvesort farvesort colorbyculture"
+        ;
+        }
+
+    #gridtypografi {
+        grid-gap: 3em;
+        margin-top: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "fontklassifikationer bogstavetsanatomi ."
+        ; 
+    }
+
+        #gridfontklassifikationer {
+            margin: 2em;
+            grid-gap: 3em;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-areas:           
+            "hvadertypografi hvadertypografi hvorfortypografi hvorfortypografi"
+            "fontklassifikation typefacefont typefacefont fontstyles" 
+            ". fontweights fontweights ."
+            ;
+        }
+
+        #gridbogstavetsanatomi {
+            margin: 2em;
+            grid-gap: 3em;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+            ". bogstavanatomi ."
+            ;
+        }
+
+
+
+    #gridaestetik {
+        grid-gap: 3em;
+        margin-top: 3em;
+        margin-left: 3em;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". aestetikiwebdesign ."
+        ; 
+    }
+        #gridaestetikwebdesign {
+            margin: 2em;
+            grid-gap: 3em;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-areas:
+            "hvaderaestetikweb hvaderaestetikweb hvorforaestetikweb hvorforaestetikweb"
+            "aestetikfunktion aestetikfunktion elementerwebdesign elementerwebdesign"
+        }
+
     /* DESIGN SLUT */
     
     /* KODE START */

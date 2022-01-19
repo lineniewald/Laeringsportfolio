@@ -18,7 +18,7 @@
             <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
         </section>
 
-        <!-- TOP NAVIGATION -->
+     <!-- TOP NAVIGATION START -->
         <section class="topnav"> 
             <a class="active" href="design.html">Design</a>
             <a href="kode.html">Kode</a>
@@ -27,28 +27,32 @@
             <a href="vaerktoejer.html">Værktøjer</a>
             <input type="text" placeholder="Søg...">
         </section>
-        <!-- UNDER NAVIGATION -->
-        <section class="topnavkategori"> 
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
             <a class="active" href="designprincipper.html">Designprincipper</a>
-            <a href=".">Farveteori</a>
-            <a href=".">Typografi</a>
-            <a href=".">Æstetik i webdesign</a>
+            <a href="farveteori.html">Farveteori</a>
+            <a href="typografi.html">Typografi</a>
+            <a href="aestetik.html">Æstetik</a>
         </section>
-        <section class="topnavemne"> 
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
             <a class="active" href="designprincipper_gestalt.html">Gestaltprincipper</a>
         </section>
+     <!-- TOP NAVIGATION SLUT -->
     </header>
 
-    <!-- TILBAGE KNAP MOBIL -->
+ <!-- TILBAGE KNAP MOBIL START -->
     <a href="designprincipper.html">
         <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
     </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
 
-    <!-- OVERSKRIFT -->
+ <!-- OVERSKRIFT START -->
     <section class="overskriftside">Gestaltprincipper</section>
+ <!-- OVERSKRIFT SLUT -->
 
 
-    <!-- GRID -->
+ <!-- GRID START -->
     <div id="gridgestalt">
         <section id="hvadergestalt">
            <h1>Hvad er det?</h1>
@@ -240,8 +244,11 @@
                 </p>
             </section>
         </section>
+    </div>
+ <!-- GRID SLUT -->   
 
-        <section id="designprincipkilder"> <!-- Kilder -->
+ <!-- KILDER START -->
+        <section id="designprincipkilder">
             <section class="overskriftside">Kilder</section>
             <section class="kilder">
                 <a href="https://graybox.co/knowledge/blog/gestalt-principles-applied-to-design" target="_blank"><section>https://graybox.co/knowledge/blog/gestalt-principles-applied-to-design </section></a>
@@ -253,9 +260,9 @@
                 <a href="https://www.toptal.com/designers/ui/gestalt-principles-of-design" target="_blank"><section>https://www.toptal.com/designers/ui/gestalt-principles-of-design</section></a> 
             </section>
         </section>
-    </div>
+ <!-- KILDER SLUT -->
 
-    <!-- TIL TOPPEN KNAP START -->
+ <!-- TIL TOPPEN KNAP START -->
     <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
     <script>
         // Få knappen sat ind
@@ -278,12 +285,11 @@
           document.documentElement.scrollTop = 0;
         }
     </script>
-    <!--TIL TOPPEN KNAP SLUT -->
+ <!--TIL TOPPEN KNAP SLUT -->
 
     <footer>
         <section class="footercontainer">
             <img src="footer1.png" alt="footer" style="width:100%;">
-            <!--<section class="centered">Læringsportfolio</section>-->
         </section>
     </footer>
 </body>
