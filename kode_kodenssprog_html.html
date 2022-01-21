@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a class="active" href="kode_kodenssprog.html">Kodens sprog</a>
+            <a href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a class="active" href="kode_kodenssprog_html.html">HTML</a>
+            <a href="kode_kodenssprog_css.html">CSS</a>
+            <a href="kode_kodenssprog_javascript.html">JavaScript</a>
+            <a href="kode_kodenssprog_editor.html">Editor</a>
+            <a href="kode_kodenssprog_server.html">Server</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenssprog.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">HTML</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridhtml">
+        <section id="hvaderhtml">
+           <h1>Hvad er det?</h1>
+           <p>HTML = HyperText Markup Language.</p>
+           <p>Struktursproget – hjemmesidens skelet.</p>
+           <p>HTML beskriver indholdet på et website på en struktureret måde. Det er fundamentet for alt indhold på internettet.</p>
+        </section>
+
+        <section id="htmlstruktur"> <!-- HTML struktur -->
+            <section id="htmlstrukturoverskrift">
+                <h1>HTML struktur</h1>
+            </section>
+            <section id="htmlstrukturbillede">
+                <a href="https://tutorial.techaltum.com/htmlTags.html" target="_blank"><section><img src="htmlstruktur.png" alt="Kode html struktur" class="responsive"></section></a>
+                <a id="billedelink" href="https://tutorial.techaltum.com/htmlTags.html" target="_blank"><section>https://tutorial.techaltum.com/htmlTags.html</section></a>
+            </section>
+            <section id="htmlstrukturtekst">
+                <p>De fleste elementer har følgende struktur:
+                    <ul>
+                        <li>Start-tag med evt. attributter</li>
+                        <li>Indholdet som påvirkes</li>
+                        <li>Sluttag - en skråstreg tilføjes</li>
+                      </ul>
+                </p>
+                <p>En undtagelse fra strukturen er fx linjeskift, br, som ikke har et sluttag.</p>
+            </section>
+        </section>
+
+        <section id="htmlattributter"> <!-- Attributter -->
+            <section id="htmlattributoverskrift">
+                <h1>Attributter</h1>
+            </section>
+            <section id="htmlattributbillede">
+                <a href="https://tutorial.techaltum.com/attribute.html" target="_blank"><section><img src="htmlattributter.jpg" alt="Kode html attributter" class="responsive"></section></a>
+                <a id="billedelink" href="https://tutorial.techaltum.com/attribute.html" target="_blank"><section>https://tutorial.techaltum.com/attribute.html</section></a>
+            </section>
+            <section id="htmlattributtekst">
+                <h2>Hvad er attributter?</h2>
+                <p>En attribut er en tilføjelse til et element-tag, som placeres inde i start-tagget og tilføjer ekstra information til elementet.</p>
+                <p>Den er opdelt i to segmenter - navn og værdi.</p>
+                <p>Eksempler:
+                <ul>
+                    <li>Id - giver et element et unikt navn.<br>
+                        Det kan bruges i alle tags og identificerer elementer på websitet.<br>
+                        Brug i CSS - rammer specifikke elementer og ændrer udseendet individuelt via id'et.
+                    </li>
+                    <li>Class - giver elementer et navn, som de kan grupperes efter.<br>
+                        Det kan bruges i alle tags.<br>
+                        Brug i CSS - rammer flere elementer som skal formateres på samme måde.
+                    </li>
+                    <li>Href - specificerer link-adressen.<br>
+                        Bruges i et a-tag.
+                    </li>
+                    <li>Src - specificerer billedets eller videoens filnavn.<br>
+                        Bruges i et img- eller video-tag.
+                    </li>
+                    <li>Alt - specificerer en alternativ tekst.<br>
+                        Bruges i et img-tag.<br>
+                        Teksten vises hvis billedet ikke kan vises på websitet.<br>
+                        Det kan oplæses af skærmlæsere.
+                    </li>
+                    <li>Style - laver inline styling.<br>
+                        Det kan bruges i alle tags.<br>
+                        Designet af elementet sker direkte i HTML-elementet - fx placering, størrelse, farve.
+                    </li>
+                    <li>Lang - specificerer websitets sprog.<br>
+                        Bruges i et html-tag.
+                    </li>
+                    <li>Title - specificerer en titel, som dukker op når musen føres over elementet.<br>
+                        Det kan bruges i alle tags.
+                    </li>
+                    <li>Target - angiver hvordan linket skal åbnes.<br>
+                        Bruges i link-tags.<br>
+                        _self = link åbnes på samme side.<br>
+                        _blank = link åbnes på en ny side.
+                    </li>
+                </ul></p>
+            </section>
+        </section>
+
+        <section id="htmlsemantisketags"> <!-- Semantiske tags -->
+            <section id="semantisketagsoverskrift">
+                <h1>Semantiske tags</h1>
+            </section>
+            <section id="semantisketagsbillede">
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank"><section><img src="semantisktag.gif" alt="Kode semantiske tags" class="responsive"></section></a>
+                <a id="billedelink" href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank"><section>https://www.w3schools.com/html/html5_semantic_elements.asp</section></a>
+            </section>
+            <section id="semantisketagstekst">
+                <h2>Hvad er semantiske tags?</h2>
+                <p>Semantiske tags fortæller noget om indholdet - indholdet har betydning.</p>
+                <p>Ved brug af semantiske tags får man bedre resultater på søgemaskiner (SEO).</p>
+                <p>Eksempler:
+                <ul>
+                    <li>Header - sidehoved, header.</li>
+                    <li>Footer - sidefod, footer. </li>
+                    <li>Headings - overskrifter, h1.</li>
+                    <li>Paragraphs - tekstafsnit, p.</li>
+                    <li>Sections - sektioner, section.</li>
+                </ul></p>
+            </section>
+        </section>
+        <section id="htmlandretags"> <!-- Andre tags -->
+            <section id="andretagsoverskrift">
+                <h1>Andre tags</h1>
+            </section>
+
+            <section id="andretagstekst">
+                <p>
+                    <ul>
+                        <li>Body - alt det synlige indhold på websitet.</li>
+                        <li>Comments - kommentarer til kodningen.</li>
+                        <li>Head - metainformation om websitet, som ikke er synligt på selve websitet.</li>
+                        <li>Image - billeder.</li>
+                        <li>Links - eksterne vs interne links.</li>
+                        <li>Lists - ordnede, uordnede og definitionslister.</li>
+                        <li>Meta charset - bestemmer websitets tegnsæt. UTF-8 dækker næsten alle bogstaver og symboler i hele verden.</li>
+                        <li>Title - websitets titel, som står i browservinduet.</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+
+        <section id="htmlvalidering"> <!-- Validering -->
+            <section id="valideringoverskrift">
+                <h1>Validering</h1> 
+            </section>
+            <section id="valideringtekst">
+                <p>Validering laves for at tjekke om HTML-koden overholder standarderne. Dette kan med fordel gøres løbende, da man derved får tilbagemelding på sin kode.</p>
+                <p>Man kan tilføje en URL, en uploadet fil eller en kopi af sin kode fra editoren.</p>      
+                <p>Validering kan ske her: <a href="http://validator.w3.org/" target="blank" id="tekstlink">http://validator.w3.org/</a></p>
+            </section>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="designprincipkilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins</p>
+            </section>
+            <section class="kilder">
+                <a href="https://simplecode.dk/html/" target="_blank"><section>https://simplecode.dk/html/</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://tutorial.techaltum.com/attribute.html" target="_blank"><section>https://tutorial.techaltum.com/attribute.html</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://www.w3schools.com/" target="_blank"><section>https://www.w3schools.com/</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

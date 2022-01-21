@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Versionsstyring</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+        
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kode_kodenssprog.html">Kodens sprog</a>
+            <a href="kode_kodenslayout.html">Kodens layout</a>
+            <a class="active" href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START  -->
+    <section class="overskriftside">Versionsstyring</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridversionsstyring">
+        <section id="hvaderversionsstyring">
+            <h1>Hvad er det?</h1>
+            <p>Versionsstyring er en metodisk tilgang. Det kan være noget så simpelt som navngivning af ens filer eller mapper og suppleres med notater om ændringer der sker fra version til version.</p>
+            <p>Version Control System (VCS) understøtter versionsstyring. Denne software holder styr på de forskellige versioners forskelle. Det kan være en tjeneste i skyen eller et program installeret på en lokal server.</p>
+            <p>De mest udbredte måder er Git-protokollen og SVN (Subversion).</p>
+        </section>
+        <section id="hvorforversionsstyring">
+            <h1>Hvorfor er det relevant?</h1>
+            <ul>
+                <li>Man kan undgå fejl.</li>
+                <li>Man kan gå tilbage, hvis fejlene opstår.</li>
+                <li>Man kan holde styr på delprojekter - samme ting kan laves i forskellige versioner til forskellige kunder.</li>
+                <li>Man kan samarbejde.</li>
+            </ul>
+        </section>
+        <section id="hvorversionsstyring">
+            <h1>Hvor bruges det?</h1>
+            <p>Det bruges i alle typer af IT-projekter og af alle som arbejder professionelt med IT-udvikling – lige fra hobby-kodere til store organisationer.</p>
+            <p>Det kan dog også bruges til at dele andet end kun kildekode – fx aftaler, rapporter osv.</p>
+        </section>
+        <section id="versionsstyringgit">
+            <h1>Git</h1>
+            <ul>
+                <li>En standard - en protokol</li>
+                <li>Versionsstyringssystem</li>
+                <li>Man kan selv opsætte en Git-server eller bruge en online tjeneste - fx GitHub, GitLab, BitBucket.</li>
+            </ul>
+        </section>
+        <section id="versionsstyringgithub">
+            <h1>GitHub</h1>
+            <ul>
+                <li>Webplatform</li>
+                <li>Oprettelse af Git-repositories i skyen</li>
+                <li>Man behøver ikke installere en server</li>
+                <li>Har flere features indbygget – fx til samarbejde, projektstyring osv.</li>
+                <li>Kodedelings-site – et slags socialt medie for kodning</li>
+                <li>Portfolio for kode</li>
+                <li>Kommandolinje eller desktopprogram</li>
+                <li>Man kan hente kode til egne projekter</li>
+                <li>Mulighed for private repositories</li>
+            </ul>
+            <h2>Væsentlige begreber</h2>
+            <ul>
+                <li>Repository (repo) – samling af filer, projektmappe</li>
+                <li>Branch – forgrening, parallel version af repo som ikke har betydning for den oprindelige</li>
+                <li>Master branch – hovedforløbet, den oprindelige version, den der gælder</li>
+                <li>Commit – revision, milepæl; det svarer til at gemme lige netop det sted i versionen, som giver mulighed for at komme tilbage til det sted igen.</li>
+                <li>Pull Request – forslag til ny udgave, rettelser</li>
+                <li>Diff – forskel mellem to commits, difference</li>
+                <li>Merge – ændringer i en branch samles med en anden branch, fx gennem et pull request</li>
+                <li>Pull – man henter ændringer og merger dem</li>
+            </ul>
+        </section>
+    </div>
+ <!-- GRID SLUT -->
+
+ <!-- KILDER START -->
+        <section id="kilderversionsstyring">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <a href="https://da.wikipedia.org/wiki/Versionsstyring" target="_blank"><section>https://da.wikipedia.org/wiki/Versionsstyring</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://docs.github.com/en/desktop" target="_blank"><section>https://docs.github.com/en/desktop</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://docs.github.com/en/get-started/quickstart/github-flow" target="_blank"><section>https://docs.github.com/en/get-started/quickstart/github-flow </section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://github.com/features" target="_blank"><section>https://github.com/features</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://ida.dk/arrangementer-og-kurser/kurser/it-udvikling/fordelene-ved-distribueret-versionsstyring" target="_blank"><section>https://ida.dk/arrangementer-og-kurser/kurser/it-udvikling/fordelene-ved-distribueret-versionsstyring</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

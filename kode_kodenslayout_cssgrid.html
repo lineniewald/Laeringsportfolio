@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kode_kodenssprog.html">Kodens sprog</a>
+            <a class="active" href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="kode_kodenslayout_designstrategi.html">Designstrategier</a>
+            <a class="active" href="kode_kodenslayout_cssgrid.html">CSS Grid</a>
+            <a href="kode_kodenslayout_cms.html">CMS</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenslayout.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">CSS Grid System</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridcssgrid">
+        <section id="hvadercssgrid">
+            <h1>Hvad er det?</h1>
+            <p>Et layout i form af et ”gitter”. Brugerfladen opdeles i søjler og rækker.</p>
+            <p>Grid er fleksibelt, hvilket gør det muligt at flytte rundt på sine elementer og ændre størrelsen på dem.</p>
+            <p>Bygges op med en container som indeholder items.</p>
+        </section>
+        <section id="cssgridelementer">
+            <h1>Elementer</h1>
+                <h2>Container og items</h2>
+                <ul>
+                    <li>Container element = grid</li>
+                    <li>Kolonner = grid-template-columns - bestemmer bredden</li>
+                    <li>Rækker = grid-template-rows - bestemmer højden</li>
+                    <li>Fractions = dele (fr)</li>
+                </ul>
+                <h2>Grid line</h2>
+                <ul>
+                    <li>Linjerne der opdeler griddet – linjerne imellem felterne.</li>
+                    <li>Lodrette linjer – colomn lines.</li>
+                    <li>Vandrette grid lines – row lines.</li>
+                </ul>
+                <h2>Grid cell</h2>
+                <ul>
+                    <li>En celle/felt i griddet.</li>
+                </ul>
+                <h2>Grid gap</h2>
+                <ul>
+                    <li>Afstanden mellem hver række og søjle.</li>
+                    <li>Som udgangspunkt sidder felterne helt tæt – kan ændres med:<br>
+                        Grid-colomn-gap
+                        Grid-row-gap
+                        Grid-gap
+                        Den ønskede afstand angives i pixels.</li>
+                </ul>
+                <h2>Grid track</h2>
+                <ul>
+                    <li>Det som ligger ved siden af hinanden imellem to grid lines.</li>
+                    <li>En række eller en søjle af grid cells.</li>
+                </ul>
+                <h2>Grid area</h2>
+                <ul>
+                    <li>Et område i griddet, som består af flere sammenhængende grid cells.</li>
+                    <li>Kan være over flere rækker og flere søjler, men behøver ikke være det.</li>
+                    <li>Kan være en del af et grid track</li>
+                </ul>
+        </section>
+        <section id="cssgridtomaader">
+            <h1>2 måder at bruge det på</h1>
+            <h2>Første måde:</h2>
+            <ul>
+                <li>Minder om flexbox.</li>
+                <li>Fordeling styres ved at angive på hvert element.</li>
+                <li>Hvert element skal styles for sig.</li>
+                <li>Kan være tungt at ændre i.</li>
+            </ul>
+            <h2>Anden måde:</h2>
+            <ul>
+                <li>Forældreelementet styrer det overordnede grid.</li>
+                <li>Kan være lettere at ændre.</li>
+                <li>Kræver god, beskrivende navngivning til grid elementerne – udover deres id.</li>
+                <li>Named areas – elementerne navngives med grid-area.</li>
+                <li>Til grid-containeren tilføjes grid-template-areas – her skrives navnene på grid-areas:<br>
+                    Angiv en række pr. linje<br>
+                    Angiv på hver linje et element pr. kolonne<br>
+                    Element skal spænde over flere kolonner – gentag det adskilt af mellemrum<br>
+                    Flere linjer er ens – juster i grid-template-rows<br>
+                    Et felt skal stå tomt – placer et punktum i stedet for navnet</li>
+            </ul>
+        </section>
+        <section id="cssgridflexbox">
+            <h1>Flexbox</h1>
+            <ul>
+                <li>Elementer deles op i bokse.</li>
+                <li>Antallet af bokse er afhængigt af bredden på viewporten (skærmbredden).</li>
+                <li>Er bygget op af en container, en kasse, som items, elementerne, placeres indeni.</li>
+                <li>Er 1-dimensionel – en retning.</li>
+            </ul>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="kilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins</p>
+            </section>
+            <section class="kilder">
+                <a href="https://html-hajen.dk/CSS/Flexbox.htm" target="_blank"><section>https://html-hajen.dk/CSS/Flexbox.htm</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://html-hajen.dk/CSS/GridElements.htm" target="_blank"><section>https://html-hajen.dk/CSS/GridElements.htm</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank"><section>https://www.w3schools.com/css/css_grid.asp</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

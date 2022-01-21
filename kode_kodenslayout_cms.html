@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kode_kodenssprog.html">Kodens sprog</a>
+            <a class="active" href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="kode_kodenslayout_designstrategi.html">Designstrategier</a>
+            <a href="kode_kodenslayout_cssgrid.html">CSS Grid</a>
+            <a class="active" href="kode_kodenslayout_cms.html">CMS</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenslayout.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">CMS</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridcms">
+        <section id="hvadercms">
+            <h1>Hvad er det?</h1>
+            <p>CMS står for Content Management System, som er et system der styrer og vedligeholder indhold. </p>
+            <p>Det er et webprogram som fungerer via en webserver, hvor man udgiver og styrer websitet fra. Man arbejder med programmet fra en internetbrowser og teksterne redigeres i en online teksteditor, som minder om fx Word.</p>
+            <p>Det er en måde for folk uden kendskab til programmering at kunne skabe og vedligeholde websites.</p>
+            <p>Der findes mange forskellige CMS-systemer. Et par stykker kunne være WordPress, Joomla og Umbraco.</p>
+        </section>
+        <section id="cmsfordele">
+            <h1>Fordele</h1>
+                <ul>
+                    <li>Mere end én kan have adgang og redigere i indholdet.</li>
+                    <li>Man kan bruge det hvor som helst, da det klares igennem en internetbrowser.</li>
+                    <li>Ikke nødvendigt med erfaring med programmering.</li>
+                    <li>Systemet kan tilpasses de enkeltes behov.</li>
+                    <li>Automatiseret kvalitetssikring – man får ensartede sider og det er lettere for søgemaskiner at finde én.</li>
+                    <li>Al data gemmes i en database.</li>
+                    <li>Mindre brug for support, når opsætningen er lavet</li>
+                </ul>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="kilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins</p>
+            </section>
+            <section class="kilder">
+                <a href="http://www.webmanage.dk/hvad-er-cms/" target="_blank"><section>http://www.webmanage.dk/hvad-er-cms/</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://www.toolmaster.dk/hvad-er-cms-system" target="_blank"><section>https://www.toolmaster.dk/hvad-er-cms-system</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

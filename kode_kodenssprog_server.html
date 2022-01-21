@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a class="active" href="kode_kodenssprog.html">Kodens sprog</a>
+            <a href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="kode_kodenssprog_html.html">HTML</a>
+            <a href="kode_kodenssprog_css.html">CSS</a>
+            <a href="kode_kodenssprog_javascript.html">JavaScript</a>
+            <a href="kode_kodenssprog_editor.html">Editor</a>
+            <a class="active" href="kode_kodenssprog_server.html">Server</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenssprog.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Server</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridserver">
+        <section id="hvaderenserver">
+           <h1>Hvad er det?</h1>
+           <p>En server er en ”computer” der deler data med andre digitale apparater, klienter, via et computernetværk. Klienter beder om information fra serveren og serveren sender disse tilbage til klienterne. Dette kan ske via et lokalt netværk (LAN) eller over internettet (WAN).</p>
+           <p>Klienter kan være alle former for enheder: computere, mobiler, bærbare, printere etc. Det kan også være alle former for software-programmer: mail-, print-, filprogram eller et website.</p>
+        </section>
+        <section id="servertyper">
+            <h1>Typer</h1>
+            <p>Fil-server
+                <ul>
+                    <li>Opbevarer og deler fil-dokumenter over et netværk.</li>
+                    <li>Klienter er computere og programmer med forbindelse til netværket og skal have adgang til filerne.</li>
+                </ul>
+            </p>
+            <p>Print-server
+                <ul>
+                    <li>Kan dele en eller flere printere over et netværk.</li>
+                    <li>Klienter er computere som skal kunne printe dokumenter.</li>
+                </ul>
+            </p>
+            <p>Web-server
+                <ul>
+                    <li>Opbevarer og viser websites i browsere til brugerne på internettet</li>
+                    <li>Alle websites har en webserver.</li>
+                    <li>Klienter er computere med adgang til internettet.</li>
+                </ul>
+            </p>
+            <p>FTP-server
+                <ul>
+                    <li>Udveksler filer til anvendelse på web-servere mv.</li>
+                    <li>Kommunikerer med en FTP-klient.</li>
+                </ul>
+            </p>
+            <p>Mail-server
+                <ul>
+                    <li>Gør det muligt at kommunikere over mail.</li>
+                    <li>Klienter er afsendere og modtagere af mails.</li>
+                </ul>
+            </p>
+            <p>Database-server
+                <ul>
+                    <li>Opbevarer og opretholder data i en database.</li>
+                    <li>Klienter er programmer, som kan tilgå en database.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="serverwebsite">
+            <h1>Website på en server</h1>
+            <p>Webserveren leverer indhold til klienterne – browserne. De nødvendige filer ligger på serveren.</p>
+            <p>Serveren har en IP-adresse – denne adresse kan have et domænenavn.</p>
+            <p>Domænenavnet oversættes via en DNS-server til den rigtige IP-adresse.</p>
+            <p>En browser kan både bruge en IP-adresse og et domænenavn.</p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="designprincipkilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins</p>
+            </section>
+            <section class="kilder">
+                <a href="https://simplecode.dk/hvad-er-en-server/" target="_blank"><section>https://simplecode.dk/hvad-er-en-server/</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

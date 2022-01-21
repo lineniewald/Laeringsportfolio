@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kode_kodenssprog.html">Kodens sprog</a>
+            <a class="active" href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a class="active" href="kode_kodenslayout_designstrategi.html">Designstrategier</a>
+            <a href="kode_kodenslayout_cssgrid.html">CSS Grid</a>
+            <a href="kode_kodenslayout_cms.html">CMS</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenslayout.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Designstrategier</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="griddesignstrategi">
+        <section id="designstrategioverskrift">
+           <h1>Strategier</h1>
+        </section>
+        <section id="designstrategimobilefirst">
+           <h2>Mobile first</h2>
+           <ul>
+               <li>Informationen tilpasses på begrænset plads.</li>
+               <li>Mobile enheder bruges mere end desktop.</li>
+               <li>Indholdshierarki – hvad skal prioriteres.</li>
+               <li>CSS tilpasses mobil enhed først – derefter tilføjes breakpoints med design for de større skærme.</li>
+           </ul>
+        </section>
+        <section id="designstrategigracefull">
+            <h2>Gracefull degradation</h2>
+            <ul>
+                <li>Brugeroplevelsen skal være god på enheder med mindre muligheder.</li>
+                <li>Typisk ved desktop first .</li>
+            </ul>
+        </section>
+        <section id="designstrategiprogressive">
+            <h2>Progressive enhancement</h2>
+            <ul>
+                <li>Gradvis tilføjelse af features til enheder hvor de kan bruges.</li>
+                <li>Typisk ved mobile first – nogle features vil ikke fungere på mobilen, men måske på desktop.</li>
+            </ul>
+        </section>
+
+        <section id="designstrategilayoutoverskrift">
+            <h1>Layoutformer</h1>
+        </section>
+        <section id="designstrategilayoutflydende">
+            <h2>Flydende</h2>
+            <ul>
+                <li>Fluid, liquid, flydende, elastisk.</li>
+                <li>Elementer tilpasses bredden.</li>
+                <li>Bredder angives relativt – i procent.</li>
+                <li>Elementer kan gøres meget smalle – dog er der ofte grænser for hvor smalt et element kan blive.</li>
+                <li>Bedst i tilfælde hvor indhold og funktionalitet er vigtigere end det grafiske design.</li>
+                <li>Pladsen bliver udnyttet bedre.</li>
+                <li>Giver ofte en bedre brugeroplevelse.</li>
+                <li>Ikke populært blandt designere med fokus på æstetik.</li>
+            </ul>
+        </section>
+        <section id="designstrategilayoutresponsiv">
+            <h2>Responsiv</h2>
+            <ul>
+                <li>Responsive, RDW.</li>
+                <li>Består af fluid layout samt en række regler, som ændrer layoutet afhængigt af skærmstørrelsen – @media.</li>
+                <li>HTML og CSS-filer er de samme på tværs af enheder.</li>
+                <li>Planlægning er nødvendigt.</li>
+                <li>Mobile first-tankegang.</li>
+                <li>Er standard den dag i dag.</li>
+                <li>Breakpoints - @media - den bredde hvor en ny regel overtager for en anden.</li>
+                <li>Viewport - et meta-tag, som fortæller at en mobil enhed ikke skal skalere websitet</li>
+            </ul>
+        </section>
+        <section id="designstrategilayoutstatisk">
+            <h2>Statisk</h2>
+            <ul>
+                <li>Static, fixed width.</li>
+                <li>Baseres på faste mål (fixed width).</li>
+                <li>Ændres ikke afhængigt af skærmstørrelse.</li>
+                <li>Ekstra plads bliver til luft i siderne af skærmen.</li>
+                <li>Desktop – beskæres i siden.</li>
+                <li>Mobile enheder – zoomes/skaleres.</li>
+                <li>Fungerer ofte dårligt på andre skærmstørrelser end den man har designet til.</li>
+            </ul>
+        </section>
+        <section id="designstrategilayoutadaptiv">
+            <h2>Adaptiv</h2>
+            <ul>
+                <li>Adaptive, ADW.</li>
+                <li>En blanding af statisk og responsiv.</li>
+                <li>Indeholder en række statiske layouts.</li>
+                <li>Styres af @mediaqueries.</li>
+                <li>Hvis breakpoints ikke rammes vil der være for meget eller for lidt plads på skærmen.</li>
+                <li>Vælges sjældent, hvis man kan vælge responsivt.</li>
+                <li>Kan benyttes til at konvertere et statisk layout til et responsivt – man undgår at skrive alt om.</li>
+                <li>Typisk mobile last.</li>
+            </ul>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="kilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins</p>
+            </section>
+            <section class="kilder">
+                <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank"><section>https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

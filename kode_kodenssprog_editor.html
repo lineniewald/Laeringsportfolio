@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a class="active" href="kode_kodenssprog.html">Kodens sprog</a>
+            <a href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="kode_kodenssprog_html.html">HTML</a>
+            <a href="kode_kodenssprog_css.html">CSS</a>
+            <a href="kode_kodenssprog_javascript.html">JavaScript</a>
+            <a class="active" href="kode_kodenssprog_editor.html">Editor</a>
+            <a href="kode_kodenssprog_server.html">Server</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenssprog.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Editor</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="grideditor">
+        <section id="hvadereditor">
+           <h1>Hvad er det?</h1>
+           <p>Værktøjet vi redigerer et website med – der hvor selve kodningen foregår.</p>
+           <p>Det er et program, som arbejder med ren tekst uden nogen form for formatering. Derfor kan et tekstredigeringsprogram, som fx Word, ikke bruges, da man i dette program kan formatere indholdet.</p>
+        </section>
+        <section id="editorindexhtml">
+            <h1>Index.html</h1>
+            <p>Index.html fungerer som forsiden for hele websitet. Det er den side, som webserveren leder efter hvis der er oprettet en mappe med alt indhold på serveren.</p>
+        </section>
+        <section id="editorlinjenumre">
+            <h1>Linjenumre</h1>
+            <p>Linjenumre bruges ofte, når man skal fortælle om koden – det gør det nemt og hurtigt at finde det sted i koden, som man snakker om.</p>
+        </section>
+        <section id="editorindrykning">
+            <h1>Indrykning af kode</h1>
+            <p>Indrykning af kode skaber god ”ro og orden”. Koden bliver lettere at overskue og redigere i på et senere tidspunkt. Og det gør koden læselig for andre end dig selv.</p>
+            <p>Til indrykning bruges tabulator-tasten og ikke mellemrumstasten.</p>
+        </section>
+        <section id="editorwhitespace">
+            <h1>White space/luft</h1>
+            <p>Med white space menes der brugen af linjeskift, indrykning og mellemrum i selve koden. Det har ikke betydning for selve websitets udseende. </p>
+            <p>Dette bruges også til at skabe bedre overblik og gøre koden mere overskuelig.</p>
+        </section>
+        <section id="editorulemper">
+            <h1>Ulemper ved indrykning og white space</h1>
+            <p>Jo mindre en fil er, jo hurtigere loader den og jo mere attraktiv bliver den. For at gøre en fil mindre kan man fjerne de unødvendige linjeskift, men dette gør også at koden bliver mindre overskuelig og mindre velordnet. Dog må man gerne undlade store mængder white space.</p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="designprincipkilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins, side 50</p>
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

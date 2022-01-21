@@ -44,10 +44,6 @@ body {
     display: none;
 }
 
-/* BRØDKRUMMER*/
-ul.breadcrumb {
-    display: none;
-}
 
 /* Knapper med kategorier START*/
 .linkknap { 
@@ -75,8 +71,7 @@ ul.breadcrumb {
 /* OVERSKRIFT PÅ KATEGORI SIDER START*/
 .overskriftside {
     font-family: freestyle script;
-    font-size: 40pt;
-    margin-top: 30px;
+    font-size: 30pt;
     color: #D4A686;
     text-align: center;
 }
@@ -131,35 +126,27 @@ ul.breadcrumb {
     "lovgivning"
     "vaerktoejer"
     ;
-}
-    
-#design {
-   grid-area: design; 
-}
-
-#kode {
-    grid-area: kode;
-}
-
-#kommunikation {
-    grid-area: kommunikation;
-}
-
-#lovgivning {
-    grid-area: lovgivning;
-}
-
-#vaerktoejer {
-    grid-area: vaerktoejer;
-    margin-bottom: 1em;
-}
-
+}   
+    #design {
+        grid-area: design; 
+    }
+    #kode {
+        grid-area: kode;
+    }
+    #kommunikation {
+        grid-area: kommunikation;
+    }  
+    #lovgivning {
+        grid-area: lovgivning;
+    }
+    #vaerktoejer {
+        grid-area: vaerktoejer;
+        margin-bottom: 1em;
+    }
 /* FORSIDE SLUT */
 
 
-
 /* DESIGN START */
-
 #griddesign { /* Design forside */
     display: grid;
     grid-gap: 1em;
@@ -462,17 +449,17 @@ ul.breadcrumb {
         grid-area: aestetikiwebdesign;
     }
 
-#gridaestetikwebdesign {
-    display: grid;
-    grid-gap: 1em;
-    margin: 1em;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "hvaderaestetikweb"
-    "hvorforaestetikweb"
-    "aestetikfunktion"
-    "elementerwebdesign"
-    ;
+    #gridaestetikwebdesign {
+        display: grid;
+        grid-gap: 1em;
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hvaderaestetikweb"
+        "hvorforaestetikweb"
+        "aestetikfunktion"
+        "elementerwebdesign"
+        ;
 }   
 /* DESIGN SLUT*/
 
@@ -498,6 +485,338 @@ ul.breadcrumb {
         grid-area: versionsstyring;
     }
 
+#gridkodenssprog {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
+    grid-template-areas:
+    ". html ."
+    ". css ."
+    ". javascript ."
+    ". editor ."
+    ". server ."
+    ;
+}
+    #html {
+        grid-area: html;
+    }
+    #css {
+        grid-area: css;
+    }
+    #javascript {
+        grid-area: javascript;
+    }
+    #editor {
+        grid-area: editor;
+    }
+    #server {
+        grid-area: server;
+    }
+
+        #gridhtml {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvaderhtml"
+            "htmlstruktur"
+            "htmlattributter"
+            "htmlsemantisketags"
+            "htmlandretags"
+            "htmlvalidering"
+            ;
+        }
+            #hvaderhtml {
+                grid-area: hvaderhtml;
+            }
+            #htmlstruktur {
+                grid-area: htmlstruktur;
+            }
+            #htmlattributter {
+                grid-area: htmlattributter;
+            }
+            #htmlsemantisketags {
+                grid-area: htmlsemantisketags;
+            }
+            #htmlandretags {
+                grid-area: htmlandretags;
+            }
+            #htmlvalidering {
+                grid-area: htmlvalidering;
+            }
+        
+        #gridcss {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "csshtmlbillede"
+            "hvadercss"
+            "cssstruktur"
+            "cssfunktioneroverskrift"
+            "cssudvaelgelementer"
+            "cssfarver"
+            "csstypografi"
+            "cssboksmodeloverskrift"
+            "cssboksmodelbillede"
+            "hvaderboksmodellen"
+            "csshoejdebredde"
+            "csskant"
+            "csspadding"
+            "cssmargin"
+            ;
+        }
+            #csshtmlbillede {
+                grid-area: csshtmlbillede;
+            }
+            #hvadercss {
+                grid-area: hvadercss;
+            }
+            #cssstruktur {
+                grid-area: cssstruktur;
+            }
+            #cssfunktioneroverskrift {
+                grid-area: cssfunktioneroverskrift;
+            }
+            #cssudvaelgelementer {
+                grid-area: cssudvaelgelementer;
+            }
+            #cssfarver {
+                grid-area: cssfarver;
+            }
+            #csstypografi {
+                grid-area: csstypografi;
+            }
+            #cssboksmodeloverskrift {
+                grid-area: cssboksmodeloverskrift;
+            }
+            #cssboksmodelbillede {
+                grid-area: cssboksmodelbillede;
+            }
+            #hvaderboksmodellen {
+                grid-area: hvaderboksmodellen;
+            }
+            #csshoejdebredde {
+                grid-area: csshoejdebredde;
+            }
+            #csskant {
+                grid-area: csskant;
+            }
+            #csspadding {
+                grid-area: csspadding;
+            }
+            #cssmargin {
+                grid-area: cssmargin;
+            }
+
+        #gridjavascript {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvaderjavascript"
+            ;
+        }
+            #hvaderjavascript {
+                grid-area: hvaderjavascript;
+            }
+        
+        #grideditor {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvadereditor"
+            "editorindexhtml"
+            "editorlinjenumre"
+            "editorindrykning"
+            "editorwhitespace"
+            "editorulemper"
+            ;
+        }
+            #hvadereditor {
+                grid-area: hvadereditor;
+            }
+            #editorindexhtml {
+                grid-area: editorindexhtml;
+            }
+            #editorlinjenumre {
+                grid-area: editorlinjenumre;
+            }
+            #editorindrykning {
+                grid-area: editorindrykning;
+            }
+            #editorwhitespace {
+                grid-area: editorwhitespace;
+            }
+            #editorulemper {
+                grid-area: editorulemper;
+            }
+
+        #gridserver {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvaderenserver"
+            "servertyper"
+            "serverwebsite"
+            ;
+        }
+
+            #hvaderenserver {
+                grid-area: hvaderenserver;
+            }
+            #servertyper {
+                grid-area: servertyper;
+            }
+            #serverwebsite {
+                grid-area: serverwebsite;
+            }
+
+
+#gridkodenslayout {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
+    grid-template-areas:
+    ". designstrategier ."
+    ". cssgrid ."
+    ". cms ."
+    ; 
+}
+    #designstrategier {
+        grid-area: designstrategier;
+    }
+    #cssgrid {
+        grid-area: cssgrid;
+    }
+    #cms {
+        grid-area: cms;
+    }
+
+        #griddesignstrategi {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "designstrategioverskrift"
+            "designstrategimobilefirst"
+            "designstrategigracefull"
+            "designstrategiprogressive"
+            "designstrategilayoutoverskrift"
+            "designstrategilayoutflydende"
+            "designstrategilayoutresponsiv"
+            "designstrategilayoutstatisk"
+            "designstrategilayoutadaptiv"
+            ;
+        }
+            #designstrategioverskrift {
+                grid-area: designstrategioverskrift;
+            }
+            #designstrategimobilefirst {
+                grid-area: designstrategimobilefirst;
+            }
+            #designstrategigracefull {
+                grid-area: designstrategigracefull;
+            }
+            #designstrategiprogressive {
+                grid-area: designstrategiprogressive;
+            }
+            #designstrategilayoutoverskrift {
+                grid-area: designstrategilayoutoverskrift;
+            }
+            #designstrategilayoutflydende {
+                grid-area: designstrategilayoutflydende;
+            }
+            #designstrategilayoutresponsiv {
+                grid-area: designstrategilayoutresponsiv;
+            }
+            #designstrategilayoutstatisk {
+                grid-area: designstrategilayoutstatisk;
+            }
+            #designstrategilayoutadaptiv {
+                grid-area: designstrategilayoutadaptiv;
+            }
+
+        #gridcssgrid {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvadercssgrid"
+            "cssgridelementer"
+            "cssgridtomaader"
+            "cssgridflexbox"
+            ;
+        }
+            #hvadercssgrid {
+                grid-area: hvadercssgrid;
+            }
+            #cssgridelementer {
+                grid-area: cssgridelementer;
+            }
+            #cssgridtomaader {
+                grid-area: cssgridtomaader;
+            }
+            #cssgridflexbox {
+                grid-area: cssgridflexbox;
+            }
+        
+        #gridcms {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "hvadercms"
+            "cmsfordele"
+            ;
+        }
+            #hvadercms {
+                grid-area: hvadercms;
+            }
+            #cmsfordele {
+                grid-area: cmsfordele;
+            }
+
+#gridversionsstyring {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "hvaderversionsstyring"
+    "hvorforversionsstyring"
+    "hvorversionsstyring"
+    "versionsstyringgit"
+    "versionsstyringgithub"
+    ; 
+}
+    #hvaderversionsstyring {
+        grid-area: hvaderversionsstyring;
+    }
+    #hvorforversionsstyring {
+        grid-area: hvorforversionsstyring;
+    }
+    #hvorversionsstyring {
+        grid-area: hvorversionsstyring;
+    }
+    #versionsstyringgit {
+        grid-area: versionsstyringgit;
+    }
+    #versionsstyringgithub {
+        grid-area: versionsstyringgithub;
+    }
 /* KODE SLUT*/
 
 /* KOMMUNIKATION START */
@@ -574,7 +893,7 @@ ul.breadcrumb {
 /* VÆRKTØJER SLUT*/
 
 
-/* REGLER FOR FLERE ELEMENTER PÅ FORSKELLIGE SIDER */
+
 .responsive {
     width: 100%;
     height: auto;
@@ -582,25 +901,32 @@ ul.breadcrumb {
 
 #billedelink {
     text-align: center;
-    font-size: 10pt;
+    font-size: 9pt;
 }
 
 .kilder {
     text-align: center;
-    font-size: 10pt;
+    font-size: 9pt;
 }
 
 h1 {
-    font-size: 15pt;
+    font-size: 13pt;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 13pt;
+    font-size: 11pt;
     font-style: italic;
     font-weight: normal;
 }
 
+p {
+    font-size: 10pt;
+}
+
+ul {
+    font-size: 10pt;
+}
 
 
 /* TABLET START */
@@ -613,111 +939,111 @@ h2 {
     }
     /* HEADER SLUT */
 
-/* TOP NAVIGATION START */
-.topnav {
-    display: inherit;
-    overflow: hidden;
-    margin-bottom: -20px;
-  }
+    /* TOP NAVIGATION START */
+    .topnav {
+        display: inherit;
+        overflow: hidden;
+        margin-bottom: -20px;
+    }
   
-  .topnav a { /* Links i nav bar*/
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+        .topnav a { /* Links i nav bar*/
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
   
-  .topnav a:hover { /* Farven på hover over links */
-    color: #D4A686;
-  }
+        .topnav a:hover { /* Farven på hover over links */
+            color: #D4A686;
+        }
   
-  .topnav a.active { /* Det "aktive" element - fremhæv siden man er på */
-    color: #D4A686;
-    font-weight: bold;
-  }
+        .topnav a.active { /* Det "aktive" element - fremhæv siden man er på */
+            color: #D4A686;
+            font-weight: bold;
+        }
   
-  .topnav input[type=text] { /* Søgeboksen i nav bar */
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    text-align: right;
-    font-size: 17px;
-  }
+        .topnav input[type=text] { /* Søgeboksen i nav bar */
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            text-align: right;
+            font-size: 17px;
+        }
 
-.topnavkategori {
-    display: inherit;
-    overflow: hidden;
-    margin-bottom: -20px;
-  }
+    .topnavkategori {
+        display: inherit;
+        overflow: hidden;
+        margin-bottom: -20px;
+        }
   
-  .topnavkategori a { /* Links i nav bar*/
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-  }
+        .topnavkategori a { /* Links i nav bar*/
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+        }
   
-  .topnavkategori a:hover { /* Farven på hover over links */
-    color: #D4A686;
-  }
+        .topnavkategori a:hover { /* Farven på hover over links */
+            color: #D4A686;
+        }
   
-  .topnavkategori a.active { /* Det "aktive" element - fremhæv siden man er på */
-    color: #D4A686;
-    font-weight: bold;
-  }
+        .topnavkategori a.active { /* Det "aktive" element - fremhæv siden man er på */
+            color: #D4A686;
+            font-weight: bold;
+        }
   
-  .topnavkategori input[type=text] { /* Søgeboksen i nav bar */
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    text-align: right;
-    font-size: 15px;
-  }
+        .topnavkategori input[type=text] { /* Søgeboksen i nav bar */
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            text-align: right;
+            font-size: 15px;
+        }
 
-.topnavemne {
-    display: inherit;
-    overflow: hidden;
-    margin-bottom: -30px;
-  }
+    .topnavemne {
+        display: inherit;
+        overflow: hidden;
+        margin-bottom: -10px;
+    }
   
-  .topnavemne a { /* Links i nav bar*/
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 13px;
-  }
+        .topnavemne a { /* Links i nav bar*/
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 13px;
+        }
   
-  .topnavemne a:hover { /* Farven på hover over links */
-    color: #D4A686;
-  }
+        .topnavemne a:hover { /* Farven på hover over links */
+            color: #D4A686;
+        }
   
-  .topnavemne a.active { /* Det "aktive" element - fremhæv siden man er på */
-    color: #D4A686;
-    font-weight: bold;
-  }
+        .topnavemne a.active { /* Det "aktive" element - fremhæv siden man er på */
+            color: #D4A686;
+            font-weight: bold;
+        }
   
-  .topnavemne input[type=text] { /* Søgeboksen i nav bar */
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    text-align: right;
-    font-size: 13px;
-  }
+        .topnavemne input[type=text] { /* Søgeboksen i nav bar */
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            text-align: right;
+            font-size: 13px;
+        }
 /* TOP NAVIGATION SLUT */
 
 
@@ -740,11 +1066,33 @@ h2 {
         border: 4px solid #D4A686;
       }
     
-      .kilder {
-          font-size: 12pt;
-      }
 
-    /* FORSIDE START */
+    p {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 15pt;
+    }
+
+    h2 {
+        font-size: 13pt;
+    }
+
+    ul {
+        font-size: 12pt;
+    }
+
+    #billedelink {
+        font-size: 10pt;
+    }
+    
+    .kilder {
+        font-size: 12pt;
+    }
+
+
+/* FORSIDE START */
     #gridforside {
         margin-top: 5em;
         margin-bottom: 3em;
@@ -904,7 +1252,7 @@ h2 {
         }
 /* DESIGN SLUT */
 
-    /* KODE START */
+/* KODE START */
     #gridkode {
         margin-top: 2em;
         margin-bottom: 3em;
@@ -916,6 +1264,146 @@ h2 {
         "versionsstyring ." 
         ;
     }
+
+        #gridkodenssprog {
+            margin-top: 2em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "html css"
+            "javascript editor"
+            "server ."
+            ;
+        }
+
+            #gridhtml {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderhtml hvaderhtml"
+                "htmlstruktur htmlattributter"
+                "htmlsemantisketags htmlandretags"
+                "htmlvalidering ."
+                ;
+            }
+
+            #gridcss {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "csshtmlbillede csshtmlbillede"
+                "hvadercss hvadercss"
+                "cssstruktur cssstruktur"
+                "cssfunktioneroverskrift cssfunktioneroverskrift"
+                "cssudvaelgelementer csstypografi"
+                "cssfarver csstypografi"
+                ". csstypografi"
+                "cssboksmodeloverskrift cssboksmodeloverskrift"
+                "cssboksmodelbillede hvaderboksmodellen"
+                "csshoejdebredde csskant"
+                "csspadding csskant" 
+                "cssmargin csskant"
+                ;
+            }
+
+            #gridjavascript {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderjavascript hvaderjavascript"
+                ;
+            }
+
+            #grideditor {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvadereditor editorindexhtml"
+                "editorlinjenumre editorindrykning"
+                "editorwhitespace editorulemper"
+                ;
+            }
+
+            #gridserver {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "hvaderenserver servertyper"
+                "serverwebsite servertyper"
+                ". servertyper"
+                ;
+            }
+
+        #gridkodenslayout {
+            margin-top: 2em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "designstrategier cssgrid"
+            "cms ."
+            ; 
+        }
+
+            #griddesignstrategi {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "designstrategioverskrift ."
+                "designstrategimobilefirst designstrategigracefull"
+                "designstrategiprogressive ."
+                "designstrategilayoutoverskrift ."
+                "designstrategilayoutflydende designstrategilayoutresponsiv"
+                "designstrategilayoutstatisk designstrategilayoutadaptiv"
+                ;
+            }
+
+            #gridcssgrid {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "hvadercssgrid hvadercssgrid"
+                "cssgridelementer cssgridtomaader"
+                "cssgridelementer cssgridflexbox"
+                ;
+            }
+
+            #gridcms {
+                margin-top: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "hvadercms cmsfordele"
+                ;
+            }
+
+        #gridversionsstyring {
+            margin-top: 2em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "hvaderversionsstyring hvorforversionsstyring"
+            "hvorversionsstyring ."
+            "versionsstyringgit versionsstyringgithub"
+            ;   
+        }
     /* KODE SLUT*/
 
     /* KOMMUNIKATION START */
@@ -972,7 +1460,6 @@ h2 {
     }
 /* HEADER SLUT */
  
-/* REGLER PÅ TVÆRS AF SIDER */
     .linkknap { 
         width: 10cm;
         height: 5cm;
@@ -983,8 +1470,9 @@ h2 {
         border: 4px solid #D4A686;
       }
     
-      .overskriftside {
-        font-size: 75pt;
+    .overskriftside {
+    font-size: 75pt;
+    margin-top: 30px;
     }
 
     /* FORSIDE START */
@@ -1015,7 +1503,7 @@ h2 {
     }
 
     #griddesignprincipper {
-        grid-gap: 3em;
+        margin-top: 3em;
         margin-top: 3em;
         margin-left: 3em;
         grid-gap: 2em;
@@ -1114,8 +1602,6 @@ h2 {
             ;
         }
 
-
-
     #gridaestetik {
         grid-gap: 3em;
         margin-top: 3em;
@@ -1126,6 +1612,7 @@ h2 {
         ". aestetikiwebdesign ."
         ; 
     }
+
         #gridaestetikwebdesign {
             margin: 2em;
             grid-gap: 3em;
@@ -1148,6 +1635,129 @@ h2 {
             "kodenssprog kodenslayout versionsstyring" 
             ;
         }
+
+            #gridkodenssprog {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "html css javascript"
+                "editor server ."
+                ;
+            }
+
+                #gridhtml {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvaderhtml hvaderhtml ."
+                    "htmlstruktur htmlattributter htmlsemantisketags"
+                    "htmlandretags htmlvalidering ."
+                    ;
+                }
+
+                #gridcss {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 2fr 1fr 1fr 2fr;
+                    grid-template-areas:
+                    "csshtmlbillede csshtmlbillede cssstruktur cssstruktur"
+                    "hvadercss hvadercss cssstruktur cssstruktur"
+                    ". . cssstruktur cssstruktur"
+                    "cssfunktioneroverskrift cssfunktioneroverskrift . ."
+                    "cssudvaelgelementer cssfarver cssfarver csstypografi"
+                    "cssboksmodeloverskrift cssboksmodeloverskrift . ."
+                    "hvaderboksmodellen hvaderboksmodellen cssboksmodelbillede cssboksmodelbillede"
+                    "csshoejdebredde csskant csskant csspadding"
+                    "cssmargin csskant csskant csspadding"
+                    ;
+                }
+
+                #gridjavascript {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 2fr 1fr 1fr 2fr;
+                    grid-template-areas:
+                    "hvaderjavascript hvaderjavascript hvaderjavascript hvaderjavascript"
+                    ;
+                }
+
+                #grideditor {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvadereditor editorindexhtml editorlinjenumre"
+                    "editorindrykning editorwhitespace editorulemper"
+                    ;
+                }
+
+                #gridserver {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvaderenserver servertyper serverwebsite"
+                    ;
+                }
+
+            #gridkodenslayout {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "designstrategier cssgrid cms"
+                ;
+            }
+
+                #griddesignstrategi {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "designstrategioverskrift . ."
+                    "designstrategimobilefirst designstrategigracefull designstrategiprogressive"
+                    "designstrategilayoutoverskrift . ."
+                    "designstrategilayoutflydende designstrategilayoutresponsiv designstrategilayoutstatisk"
+                    "designstrategilayoutadaptiv . ."
+                    ;
+                }
+
+                #gridcssgrid {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvadercssgrid hvadercssgrid ."
+                    "cssgridelementer cssgridtomaader cssgridflexbox"
+                    ;
+                }
+
+                #gridcms {
+                    margin: 2em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas:
+                    "hvadercms cmsfordele ."
+                    ;
+                }
+
+            #gridversionsstyring {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 2fr 1fr 1fr 2fr;
+                grid-template-areas:
+                "hvaderversionsstyring hvorforversionsstyring hvorforversionsstyring hvorversionsstyring" 
+                "versionsstyringgit versionsstyringgit versionsstyringgithub versionsstyringgithub"
+                ;  
+            }
     /* KODE SLUT*/
     
     /* KOMMUNIKATION START */

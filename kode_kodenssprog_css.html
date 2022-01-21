@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kode</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a class="active" href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a class="active" href="kode_kodenssprog.html">Kodens sprog</a>
+            <a href="kode_kodenslayout.html">Kodens layout</a>
+            <a href="kode_versionsstyring.html">Versionsstyring</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="kode_kodenssprog_html.html">HTML</a>
+            <a class="active" href="kode_kodenssprog_css.html">CSS</a>
+            <a href="kode_kodenssprog_javascript.html">JavaScript</a>
+            <a href="kode_kodenssprog_editor.html">Editor</a>
+            <a href="kode_kodenssprog_server.html">Server</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kode_kodenssprog.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">CSS</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridcss">
+        <section id="csshtmlbillede">
+            <a href="https://tutorial.techaltum.com/css.html" target="_blank"><section><img src="csshtmlbillede.jpg" alt="Kode html med css" class="responsive"></section></a>
+            <a id="billedelink" href="https://tutorial.techaltum.com/css.html" target="_blank"><section>https://tutorial.techaltum.com/css.html</section></a>
+        </section>
+        <section id="hvadercss">
+            <h1>Hvad er det?</h1>
+            <p>CSS = Cascading Style Sheets.</p>
+            <p>Designsproget – websitets udsmykning.</p>
+            <p>Man kan kalde det et assisterende sprog til HTML, som styler HTML-elementerne og bestemmer hvordan de skal se ud.</p>
+        </section>
+
+        <section id="cssstruktur"> <!-- CSS struktur -->
+            <section id="cssstrukturoverskrift">
+                <h1>CSS struktur</h1>
+            </section>
+            <section id="cssstrukturbillede">
+                <a href="https://catalin.red/things-you-should-know-about-css-anatomy/" target="_blank"><section><img src="cssstruktur.png" alt="Kode css struktur ekstern style" class="responsive"></section></a>
+                <a id="billedelink" href="https://catalin.red/things-you-should-know-about-css-anatomy/" target="_blank"><section>https://catalin.red/things-you-should-know-about-css-anatomy/</section></a>
+            </section>
+            <section id="cssstrukturtekst">
+                <p>Man kan tilføje CSS til sit website via 3 metoder – inline, intern og ekstern style.</p>
+                <p>Alle metoderne kan bruges samtidig, men man bør dog holde sig til én af dem.</p>
+                <p>Der er et hierarki i metodernes rækkefølge, som bestemmer hvilke der overskriver de andre, hvis et element skulle blive stylet på to forskellige måder.</p>
+                <p>Inline styling
+                    <ul>
+                        <li>Overskriver intern og ekstern style.</li>
+                        <li>CSS-koden tilføjes direkte i et HTML-element ved brug af style-attributten.</li>
+                      </ul>
+                </p>
+                <p>Internt style sheet
+                    <ul>
+                        <li>Overskriver ekstern style</li>
+                        <li>CSS-koden tilføjes indenfor head-tagget i HTML-filen ved brug af style-tagget.</li>
+                    </ul>
+                </p>
+                <p>Eksternt style sheet
+                    <ul>
+                        <li>Overskriver ingen andre metoder.</li>
+                        <li>CSS-koden tilføjes i en separat CSS-fil.</li>
+                        <li>HTML- og CSS-filerne kobles sammen via et link-tag indenfor head-tagget i HTML-filen.</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+
+        <section id="cssfunktioneroverskrift"> <!-- Funktioner -->
+            <h1>Funktioner</h1>
+        </section>
+        <section id="cssudvaelgelementer"> 
+            <section id="cssudvaelgelementeroverskrift">
+                <h2>Udvælgelse af elementer</h2>
+            </section>
+            <section id="cssudvaelgelementertekst">
+                <p>Tags
+                    <ul>
+                        <li>Udvælges ved at bruge tag-navnet, som findes mellem start- og slutklammen - <></li>
+                        <li>Tags angives kun med navnet - ingen tegn foran.</li>
+                        <li>Koden styles mellem to tuborgklammer - {}</li>
+                        <li>Brug tags hvis samtlige elementer af den samme type skal styles ens.</li>
+                        <li>Ulempen ved styling af tag-navne er, at det vil gælde for alle af den type tags på websitet. Hvis man ønsker mere specifikke stylinger, skal man vælge id-navn eller class-navn.</li>
+                    </ul>
+                </p>
+                <p>Class
+                    <ul>
+                        <li>Udvælges ved at bruge class-værdien, som HTML-elementet har fået via class-attributten. Et navn som klassificerer elementet.</li>
+                        <li>Class angives med et punktum foran class-værdien. </li>
+                        <li>Koden styles mellem to tuborgklammer - {}</li>
+                        <li>Brug class hvis det handler om at style en samling af flere elementer.</li>
+                        <li>Class overskriver Tags.</li>
+                        <li>Man kan tilføje flere class-værdier til et element ved at skrive et nyt ”navn” og dele navnene med et mellemrum. Derved behøver man ikke lave en ny class for det enkelte element.</li>
+                    </ul>
+                </p>
+                <p>Id
+                    <ul>
+                        <li>Udvælges ved at bruge id-værdien, som HTML-elementet har fået via id-attributten. Et navn som identificerer elementet.</li>
+                        <li>Id angives med et hashtag foran id-værdien.</li>
+                        <li>Koden styles mellem to tuborgklammer - {}</li>
+                        <li>Brug id hvis det handler om at style ét bestemt element.</li>
+                        <li>Id overskriver class.</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+
+        <section id="cssfarver"> 
+            <section id="cssfarveroverskrift">
+                    <h2>Farver</h2>
+                </section>
+                <section id="cssfarvertekst">
+                    <p>Forgrunds- og baggrundsfarve
+                        <ul>
+                            <li>Forgrundsfarve - erklæringen color, som angiver selve elementets farve.</li>
+                            <li>Baggrundsfarve - erklæringen background-color, som angiver farven bagved elementet.</li>
+                        </ul>
+                    </p>
+                    <p>Typer af farver
+                        <ul>
+                            <li>Prædefinerede farver - farver specificeret af deres navn.</li>
+                            <li>Hexadecimal farver - farver specificeret af et hashtag efterfulgt af 6 tal eller bogstaver: #RRGGBB</li>
+                            <li>RGB-farver - farver specificeret af RGB efterfulgt af 3 værdier i parantes: rgb(xx, xx, xx)</li>
+                            <li>HSL-farver - farver specificeret af HSL efterfulgt af 3 værdier i parantes: hsl(xx, xx%, xx%)</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+
+            <section id="csstypografi"> 
+                <section id="csstypografioverskrift">
+                    <h2>Typografi</h2>
+                </section>
+                <section id="csstypografitekst">
+                    <p>Tekststørrelse
+                        <ul>
+                            <li>Erklæringen font-size.</li>
+                            <li>Værdi: small, medium, large - oftest bruges pixels (px).</li>
+                            <li>Standardstørrelsen for en paragraf er 16px.</li>
+                            <li>-	Man kan med fordel bruge overskrift-elementer i stedet for at gøre paragrafelementerne større – søgemaskiner bruger overskrifter.</li>
+                        </ul>
+                    </p>
+                    <p>Skrifttype
+                        <ul>
+                            <li>Erklæringen font-family.</li>
+                            <li>Godt at huske:<br>
+                                Vælg en skrifttype der understøttes af de fleste browsers - netsikre skrifttyper.<br>
+                                Undgå at bruge mange forskellige skrifttyper - loadtiden kan blive længere.<br>
+                                Standardskrifttypen er Times New Roman.</li>
+                        </ul>
+                    </p>
+                    <p>Tekstvægt
+                        <ul>
+                            <li>Erklæringen font-weight.</li>
+                            <li>Regulerer hvor tyk eller tynd en tekst skal være.</li>
+                            <li>Værdi: 100-900 og lighter og bolder.</li>
+                        </ul>
+                    </p>
+                    <p>Tekstposition
+                        <ul>
+                            <li>Erklæringen text-align.</li>
+                            <li>Værdi: left, center, right, justify(udstrækker tekst, så linjer har lige meget bredde)</li>
+                        </ul>
+                    </p>
+                    <p>Tekstformatering
+                        <ul>
+                            <li>Erklæringen text-transform eller font-style.</li>
+                            <li>Font-style værdi:<br>
+                                Normal - standard.<br>
+                                Italic - skråskrift.<br>
+                                Oblique - stort set det sammen som italic, skråskrift.</li>
+                            <li>Text-transform værdi:<br>
+                                None - tekst vises som den er. Standard.
+                                Capitalize - første bogstav i hvert ord ændres til et stort bogstav.<br>
+                                Uppercase - alle bogstaver ændres til store bogstaver.<br>
+                                Lowercase - alle bogstaver ændres til små bogstaver.</li>
+                        </ul>
+                    </p>
+                    <p>Linjehøjde
+                        <ul>
+                            <li>Erklæringen line-height.</li>
+                            <li>Linjehøjden er afstanden mellem den nederste del af en tekst og den nederste del af teksten nedenunder.</li>
+                            <li>Værdi:<br>
+                                Et nummer uden enhed - linjehøjde i forhold til skriftstørrelse.<br>
+                                Et nummer med enhed - pixel eller procent.</li>
+                            <li>Det er en fordel at bruge et nummer uden enhed, da linjehøjden bliver justeret automatisk, hvis tekststørrelsen ændres.</li>
+                        </ul>
+                    </p>
+                    <p>Afstand mellem ord
+                        <ul>
+                            <li>Erklæringen word-spacing.</li>
+                            <li>Enhed - em:<br>
+                                Specificerer afstand mellem ord relativt i forhold til tekststørrelsen.<br>
+                                Standard afstand er 0.25em.<br>
+                                Negative værdier er muligt.<br>
+                                Em bruges oftest, men man kan også bruge fx pixels.</li>
+                        </ul>
+                    </p>
+                    <p>Afstand mellem bogstaver
+                        <ul>
+                            <li>Erklæringen letter-spacing.</li>
+                            <li>Enhed - em:<br>
+                                Specificerer afstand mellem bogstaver relativt i forhold til tekststørrelsen.<br>
+                                Standard er ingen afstand mellem bogstaver.<br>
+                                Em bruges oftest, men man kan også bruge fx pixels.</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+
+        <section id="cssboksmodeloverskrift"> <!-- Boks-modellen -->
+            <h1>Boks-modellen</h1>
+        </section>
+        <section id="cssboksmodelbillede">
+            <a href="https://simplecode.dk/css/boks-modellen/" target="_blank"><section><img src="cssboksmodel.png" alt="Kode css boksmodellen" class="responsive"></section></a>
+            <a id="billedelink" href="https://simplecode.dk/css/boks-modellen/" target="_blank"><section>https://simplecode.dk/css/boks-modellen/</section></a>
+        </section>
+        <section id="hvaderboksmodellen">
+            <h2>Hvad er det?</h2>
+            <p>Boks-modellen definerer hvordan et element er placeret på websitet.</p>
+            <p>Den består af 4 aspekter:
+                <ul>
+                    <li>Højde og bredde på elementet - height/width</li>
+                    <li>Fyld udenom elementet - padding</li>
+                    <li>Kanten på elementet - border</li>
+                    <li>Område udenfor kanten - margin</li>
+                </ul>
+            </p>
+        </section>
+        <section id="csshoejdebredde"> 
+            <section id="csshoejdebreddeoverskrift">
+                <h2>Højde og bredde</h2>
+                </section>
+                <section id="csshoejdebreddetekst">
+                    <p>
+                        <ul>
+                            <li>Erklæringerne height og width.</li>
+                            <li>Værdi:<br>
+                                Auto - standardværdi. Browser finder selv ud af højde og bredde.<br>
+                                Px/cm - højde og bredde defineres med en bestemt måleenhed.<br>
+                                % - højde og bredde defineres med et procenttal. En anddel af websitets samlede bredde og højde.</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section id="csskant"> 
+            <section id="csskantoverskrift">
+                <h2>Kant</h2>
+                </section>
+                <section id="csskanttekst">
+                    <p>Bredde, design og farve
+                        <ul>
+                            <li>Erklæringen border.</li>
+                            <li>3 værdier: width, style og color</li>
+                            <li>Hvis ingen værdier tilføjes er bredden=medium, designet=none og farven=samme farve som elementet.</li>
+                        </ul>
+                        <ul>Width værdi:
+                            <li>Thin</li>
+                            <li>Medium</li>
+                            <li>Thick</li>
+                            <li>En enhed - fx px eller em</li>
+                        </ul>
+                        <ul>Style værdi:
+                            <li>None - ingen kant. Standard.</li>
+                            <li>Hidden - usynling kant.</li>
+                            <li>Solid - solid kant.</li>
+                            <li>Dotted - plettet kant.</li>
+                            <li>Dashed - stribet kant.</li>
+                            <li>Double - dobbeltkantet kant.</li>
+                            <li>Groove - det ligner at et element er sænket på siden.</li>
+                            <li>Ridge - det ligner at et element er hævet på siden.</li>
+                            <li>Inset - det ligner at et element er sænket på siden. Minder om groove.</li>
+                            <li>Outset - det ligner at et element er hævet på siden. Minder om ridge.</li>
+                        </ul>
+                    </p>
+                    <p>Afrund kanter
+                        <ul>
+                            <li>Erklæringen border-radius.</li>
+                            <li>Man ændrer hjørnernes radius.</li>
+                            <li>Værdi: en enhed - pixel eller procent. Jo højere enhed, jo mere rund kant.</li>
+                            <li>Border-radius på 100% skaber en cirkel.</li>
+                        </ul>
+                    </p>
+                    <p>Forskellige kanter på hver side
+                        <ul>
+                            <li>Erklæringerne border-width, border-style og border-color.</li>
+                            <li>Værdierne skrives efter hinanden i de enkelte erklæringer med et mellemrum imellem:<br>
+                                Første værdi - den øverste kant<br>
+                                Anden værdi - den højre kant<br>
+                                Tredje værdi - den nederste kant<br>
+                                Fjerde værdi - den venstre kant</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section id="csspadding"> 
+            <section id="csspaddingoverskrift">
+                <h2>Padding</h2>
+                </section>
+                <section id="csspaddingtekst">
+                    <p>
+                        <ul>
+                            <li>Erklæringen padding.</li>
+                            <li>Rummet mellem elementets indhold og elementets kant.</li>
+                            <li>Værdier:<br>
+                                Px/cm - en bestemt måleenhed<br>
+                                % - et procenttal, en anddel af det samlede element</li>
+                        </ul>
+                    </p>
+                    <p>Forskellige padding-værdier på hver side
+                        <ul>Alle 4 værdier placeres i padding-erklæringen adskilt af mellemrum:
+                            <li>Første værdi - øverste side</li>
+                            <li>Anden værdi - højre side</li>
+                            <li>Tredje værdi - nederste side</li>
+                            <li>Fjerde værdi - venstre side</li>
+                        </ul>
+                        <ul>4 forskellige erklæringer til de 4 værdier:
+                            <li>Padding-top</li>
+                            <li>Padding-right</li>
+                            <li>Padding-bottom</li>
+                            <li>Padding-left</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section id="cssmargin"> 
+            <section id="cssmarginoverskrift">
+                <h2>Margin</h2>
+            </section>
+            <section id="cssmargintekst">
+                <p>
+                    <ul>
+                        <li>Erklæringen margin.</li>
+                        <li>Rummet udenfor elementets kant.</li>
+                        <li>Værdier:<br>
+                            Auto - standardværdi. Browser finder selv ud af hvor stor margin skal være.<br>
+                            Px/cm - en bestemt måleenhed<br>
+                            % - et procenttal, en anddel af det samlede element</li>
+                        <li>Margin kan ses hvis man kigger på afstanden fra elementets kant til de omgivende elementer.</li>
+                    </ul>
+                </p>
+                <p>Forskellige margin-værdier på hver side
+                    <ul>Alle 4 værdier placeres i margin-erklæringen adskilt af mellemrum:
+                        <li>Første værdi - øverste side</li>
+                        <li>Anden værdi - højre side</li>
+                        <li>Tredje værdi - nederste side</li>
+                        <li>Fjerde værdi - venstre side</li>
+                    </ul>
+                    <ul>4 forskellige erklæringer til de 4 værdier:
+                        <li>Margin-top</li>
+                        <li>Margin-right</li>
+                        <li>Margin-bottom</li>
+                        <li>Margin-left</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="designprincipkilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Learning Web Design, Jennifer Niederst Robbins</p>
+            </section>
+            <section class="kilder">
+                <a href="https://catalin.red/things-you-should-know-about-css-anatomy/" target="_blank"><section>https://catalin.red/things-you-should-know-about-css-anatomy/</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://simplecode.dk/css/" target="_blank"><section>https://simplecode.dk/css/</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://simplecode.dk/css/boks-modellen/" target="_blank"><section>https://simplecode.dk/css/boks-modellen/</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://tutorial.techaltum.com/css.html" target="_blank"><section>https://tutorial.techaltum.com/css.html</section></a> 
+            </section>
+            <section class="kilder">
+                <a href="https://www.w3schools.com/" target="_blank"><section>https://www.w3schools.com/</section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>
