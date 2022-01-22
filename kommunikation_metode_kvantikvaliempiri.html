@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kommunikation</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a class="active" href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kommunikation_kommunikationsteori.html">Kommunikationsteori</a>
+            <a class="active" href="kommunikation_metode.html">Metode</a>
+            <a href="kommunikation_praesentationsteknik.html">Præsentationsteknik</a>
+            <a href="kommunikation_some.html">Sociale medier</a>
+            <a href="kommunikation_tekstproduktion.html">Tekstproduktion</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="kommunikation_metode_metode.html">Metode</a>
+            <a href="kommunikation_metode_usability.html">Usability</a>
+            <a href="kommunikation_metode_videnskabeligmetode.html">Videnskabelige metoder</a>
+            <a class="active" href="kommunikation_metode_kvantikvaliempiri.html">Kvantitativ og kvalitativ empiri</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kommunikation_metode.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Kvantitativ og kvalitativ empiri</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridkommunikationkvantikvaliempiri">
+        <section id="empirikvantimetode">
+            <h1>Kvantitativ metode</h1>
+            <h2>Hvad er det?</h2>
+            <p>Kvantitativ metode handler om at opnå viden om ting der kan kvantificeres og måles (hårde data) – fx noget hvor det er muligt at sætte et tal på.</p>
+            <h2>Stikord:</h2>
+            <p>
+                <ul>
+                    <li>Mængder, antal, størrelser – som måles eller tælles</li>
+                    <li>Hardcore facts</li>
+                    <li>Mulighed for generalisering af resultater</li>
+                    <li>Man skal forklare – ikke forstå</li>
+                    <li>Målbar viden</li>
+                    <li>Lukkede spørgsmål</li>
+                    <li>Overfladisk</li>
+                    <li>Gruppemeninger</li>
+                </ul>
+            </p>
+            <h2>Metoder:</h2>
+            <p>
+                <ul>
+                    <li>Spørgeskema</li>
+                </ul>
+            </p>
+            <p>Uddybelse af <a href="." target="blank" id="tekstlink">metoder</a>.</p>
+        </section>
+        <section id="empirikvalimetode">
+            <h1>Kvalitativ metode</h1>
+            <h2>Hvad er det?</h2>
+            <p>Kvalitativ metode handler om at opnå viden om ting, der ikke kan kvantificeres og måles (bløde data) – fx om holdninger og adfærd.</p>
+            <h2>Stikord:</h2>
+            <p>
+                <ul>
+                    <li>Dybdegående</li>
+                    <li>Følelser</li>
+                    <li>Forståelse</li>
+                    <li>Meninger</li>
+                    <li>Holdninger</li>
+                    <li>Åbne spørgsmål</li>
+                </ul>
+            </p>
+            <h2>Metoder:</h2>
+            <p>
+                <ul>
+                    <li>Interviews</li>
+                    <li>Fokusgrupper</li>
+                    <li>Tænke højt-test</li>
+                    <li>Observation</li>
+                </ul>
+            </p>
+            <p>Uddybelse af <a href="." target="blank" id="tekstlink">metoder</a>.</p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="kilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Kommunikation i Multimediedesign, Anne Mette Busch, kap. 6</p>
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

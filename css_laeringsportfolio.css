@@ -792,7 +792,7 @@ body {
 #gridversionsstyring {
     display: grid;
     grid-gap: 1em;
-    margin-top: 1em;
+    margin: 1em;
     grid-template-columns: 1fr;
     grid-template-areas:
     "hvaderversionsstyring"
@@ -848,6 +848,449 @@ body {
     #tekstproduktion {
         grid-area: tekstproduktion;
     }
+
+#gridkommunikationsteori {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
+    grid-template-areas: 
+    ". kommunikation ."
+    ". kommunikationtyper ."
+    ". paradigmer ."
+    ;
+}
+    #kommunikation {
+        grid-area: kommunikation;
+    }
+    #kommunikationtyper {
+        grid-area: kommunikationtyper;
+    }
+    #paradigmer {
+        grid-area: paradigmer;
+    }
+
+        #gridkommunikationsteorikommunikation {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "hvaderkommunikation"
+            "hvorforkommunikation"
+            "kommunikationgrundantagelser"
+            "kommunikationkongruentin"
+            "kommunikationsynkrona"
+            ;
+        }
+            #hvaderkommunikation {
+                grid-area: hvaderkommunikation;
+            }
+            #hvorforkommunikation {
+                grid-area: hvorforkommunikation;
+            }
+            #kommunikationgrundantagelser {
+                grid-area: kommunikationgrundantagelser;
+            }
+            #kommunikationkongruentin {
+                grid-area: kommunikationkongruentin;
+            }
+            #kommunikationsynkrona {
+                grid-area: kommunikationsynkrona;
+            }
+        
+        #gridkommunikationtyper {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "typeverbal"
+            "typenonverbal"
+            "typeskriftlig"
+            "typevisuel"
+            "typeinterpersonel"
+            ;
+        }
+            #typeverbal {
+                grid-area: typeverbal;
+            }
+            #typenonverbal {
+                grid-area: typenonverbal;
+            }
+            #typeskriftlig {
+                grid-area: typeskriftlig;
+            }
+            #typevisuel {
+                grid-area: typevisuel;
+            }
+            #typeinterpersonel {
+                grid-area: typeinterpersonel;
+            }
+
+        #gridkommunikationparadigmer {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "hvaderetparadigme"
+            "paradigmesamfundsvidenskabelig"
+            "paradigmehumanistisk"
+            ;
+        }
+            #hvaderetparadigme {
+                grid-area: hvaderetparadigme;
+            }
+            #paradigmesamfundsvidenskabelig {
+                grid-area: paradigmesamfundsvidenskabelig;
+            }
+            #paradigmehumanistisk {
+                grid-area: paradigmehumanistisk;
+            }
+
+#gridmetode {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; /* Brugt for at kunne centrere kasserne i mobil */
+    grid-template-areas:
+    ". metode ."
+    ". usability ."
+    ". videnskabeligmetode ."
+    ". kvantikvaliempiri ."
+    ;
+}
+    #metode {
+        grid-area: metode;
+    }
+    #usability {
+        grid-area: usability;
+    }
+    #videnskabeligmetode {
+        grid-area: videnskabeligmetode;
+    }
+    #kvantikvaliempiri {
+        grid-area: kvantikvaliempiri;
+    }
+
+        #gridkommunikationmetode {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "hvadermetode"
+            "metodeundersøgelsesdesign"
+            "metodebrugerinddragelse"
+            ; 
+        }
+            #hvadermetode {
+                grid-area: hvadermetode;
+            }
+            #metodeundersøgelsesdesign {
+                grid-area: metodeundersøgelsesdesign;
+            }
+            #metodebrugerinddragelse {
+                grid-area: metodebrugerinddragelse;
+            }
+        
+        #gridkommunikationusability {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "hvaderusability"
+            "hvorforusability"
+            "usabilitybrugeroplevelse"
+            "usabilitydefinitionoverskrift"
+            "usabilitydefinitionbrugssituation"
+            "usabilitydefinitionkriterier"
+            "usabilitydefinitionprodukt"
+            ;
+        }
+            #hvaderusability {
+                grid-area: hvaderusability;
+            }
+            #hvorforusability {
+                grid-area: hvorforusability;
+            }
+            #usabilitybrugeroplevelse {
+                grid-area: usabilitybrugeroplevelse;
+            }
+            #usabilitydefinitionoverskrift {
+                grid-area: usabilitydefinitionoverskrift;
+            }
+            #usabilitydefinitionbrugssituation {
+                grid-area: usabilitydefinitionbrugssituation;
+            }
+            #usabilitydefinitionkriterier {
+                grid-area: usabilitydefinitionkriterier;
+            }
+            #usabilitydefinitionprodukt {
+                grid-area: usabilitydefinitionprodukt;
+            }
+
+        #gridkommunikationvidenskabmetode {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "hvadervidenskabmetode"
+            "videnskabmetodenatur"
+            "videnskabmetodehuman"
+            "videnskabmetodesamfund"
+            ;
+        }
+            #hvadervidenskabmetode {
+                grid-area: hvadervidenskabmetode;
+            }
+            #videnskabmetodenatur {
+                grid-area: videnskabmetodenatur;
+            }
+            #videnskabmetodehuman {
+                grid-area: videnskabmetodehuman;
+            }
+            #videnskabmetodesamfund {
+                grid-area: videnskabmetodesamfund;
+            }
+
+        #gridkommunikationkvantikvaliempiri {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "empirikvantimetode"
+            "empirikvalimetode"
+            ;
+        }
+            #empirikvantimetode {
+                grid-area: empirikvantimetode;
+            }
+            #empirikvalimetode {
+                grid-area: empirikvalimetode;
+            }
+
+#gridkommunikationpraesentation {
+    display: grid;
+    grid-gap: 1em;
+    margin: 1em;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+    "praesentationformaal"
+    "praesentationmundtlig"
+    "praesentationpathosethoslogos"
+    "praesentationappuorper"
+    "praesentationpowerpoint"
+    "praesentationmodeller"
+    ;
+}
+    #praesentationformaal {
+        grid-area: praesentationformaal;
+    }
+    #praesentationmundtlig {
+        grid-area: praesentationmundtlig;
+    }
+    #praesentationpathosethoslogos {
+        grid-area: praesentationpathosethoslogos;
+    }
+    #praesentationappuorper {
+        grid-area: praesentationappuorper;
+    }
+    #praesentationpowerpoint {
+        grid-area: praesentationpowerpoint;
+    }
+    #praesentationmodeller {
+        grid-area: praesentationmodeller;
+    }
+
+#gridsome {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas:
+    ". some ."
+    ". someplatforme ."
+    ;
+}
+    #some {
+        grid-area: some;
+    }
+    #someplatforme {
+        grid-area: someplatforme;
+    }
+
+        #gridsocialemedier {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "hvadersome"
+            "someindholdsstrategi"
+            ; 
+        }
+            #hvadersome {
+                grid-area: hvadersome;
+            }
+            #someindholdsstrategi {
+                grid-area: someindholdsstrategi;
+            }
+        
+        #gridsomeplatforme {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "somefacebook"
+            "someinstagram"
+            "somelinkedin"
+            "someyoutube"
+            ;
+        }
+            #somefacebook {
+                grid-area: somefacebook;
+            }
+            #someinstagram {
+                grid-area: someinstagram;
+            }
+            #somelinkedin {
+                grid-area: somelinkedin;
+            }
+            #someyoutube {
+                grid-area: someyoutube;
+            }
+
+#gridtekstproduktion {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas:
+    ". kommunikationskrift ."
+    ". kommunikationweb ."
+    ". medietypegenre ."
+    ". journalistgrundbegreb ."
+    ;
+}
+    #kommunikationskrift {
+        grid-area: kommunikationskrift;
+    }
+    #kommunikationweb {
+        grid-area: kommunikationweb;
+    }
+    #medietypegenre {
+        grid-area: medietypegenre;
+    }
+
+        #gridtekstkommunikationskrift {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "hvadertekstproduktion"
+            "hvorfortekstproduktion"
+            "tekstkomskriftskriftligarbejde"
+            "tekstkomskriftfortaelleteknik"
+            "tekstkomskriftstorytelling"
+            "tekstkomskriftdoedssynder"
+            "tekstkomskriftprocesforstaelse"
+            "tekstkomskriftloremipsum"
+            ;
+        }
+            #hvadertekstproduktion {
+                grid-area: hvadertekstproduktion;
+            }
+            #hvorfortekstproduktion {
+                grid-area: hvorfortekstproduktion;
+            }
+            #tekstkomskriftskriftligarbejde {
+                grid-area: tekstkomskriftskriftligarbejde;
+            }
+            #tekstkomskriftfortaelleteknik {
+                grid-area: tekstkomskriftfortaelleteknik;
+            }
+            #tekstkomskriftstorytelling {
+                grid-area: tekstkomskriftstorytelling;
+            }
+            #tekstkomskriftdoedssynder {
+                grid-area: tekstkomskriftdoedssynder;
+            }
+            #tekstkomskriftprocesforstaelse {
+                grid-area: tekstkomskriftprocesforstaelse;
+            }
+            #tekstkomskriftloremipsum {
+                grid-area: tekstkomskriftloremipsum;
+            }
+        
+        #gridtekstwebkommunikation {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "tekstwebkomnoegleord"
+            "tekstwebkomwebpapirtekst"
+            "tekstwebkombrugeren"
+            "tekstwebkomindholdet"
+            "tekstwebkomgenialegenveje"
+            "tekstwebkomtekster"
+            ;
+        }
+            #tekstwebkomnoegleord {
+                grid-area: tekstwebkomnoegleord;
+            }
+            #tekstwebkomwebpapirtekst {
+                grid-area: tekstwebkomwebpapirtekst;
+            }
+            #tekstwebkombrugeren {
+                grid-area: tekstwebkombrugeren;
+            }
+            #tekstwebkomindholdet {
+                grid-area: tekstwebkomindholdet;
+            }
+            #tekstwebkomgenialegenveje {
+                grid-area: tekstwebkomgenialegenveje;
+            }
+            #tekstwebkomtekster {
+                grid-area: tekstwebkomtekster;
+            }
+        
+        #gridtekstmedietypergenrer {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr; 
+            grid-template-areas:
+            "teksttypegenreartikel"
+            "teksttypegenrebrochure"
+            "teksttypegenreannonce"
+            "teksttypegenretekstweb"
+            "teksttypegenresometekst"
+            ;
+        }
+            #teksttypegenreartikel {
+                grid-area: teksttypegenreartikel;
+            }
+            #teksttypegenrebrochure {
+                grid-area: teksttypegenrebrochure;
+            }
+            #teksttypegenreannonce {
+                grid-area: teksttypegenreannonce;
+            }
+            #teksttypegenretekstweb {
+                grid-area: teksttypegenretekstweb;
+            }
+            #teksttypegenresometekst {
+                grid-area: teksttypegenresometekst;
+            }
+
 /* KOMMUNIKATION SLUT */
 
 /* LOVGIVNING START */
@@ -925,6 +1368,10 @@ p {
 }
 
 ul {
+    font-size: 10pt;
+}
+
+ol {
     font-size: 10pt;
 }
 
@@ -1080,6 +1527,10 @@ ul {
     }
 
     ul {
+        font-size: 12pt;
+    }
+
+    ol {
         font-size: 12pt;
     }
 
@@ -1404,9 +1855,9 @@ ul {
             "versionsstyringgit versionsstyringgithub"
             ;   
         }
-    /* KODE SLUT*/
+/* KODE SLUT*/
 
-    /* KOMMUNIKATION START */
+/* KOMMUNIKATION START */
     #gridkommunikation {
         margin-top: 2em;
         margin-bottom: 3em;
@@ -1419,9 +1870,229 @@ ul {
         "tekstproduktion ."
         ;
     }
-    /* KOMMUNIKATION SLUT */
 
-    /* LOVGIVNING START */
+        #gridkommunikationsteori {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "kommunikation kommunikationtyper"
+            "paradigmer ."
+            ; 
+        }
+
+            #gridkommunikationsteorikommunikation {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderkommunikation hvorforkommunikation"
+                "kommunikationgrundantagelser kommunikationkongruentin"
+                "kommunikationsynkrona ."
+                ;
+            }
+
+            #gridkommunikationtyper {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "typeverbal typenonverbal"
+                "typeskriftlig typenonverbal"
+                "typevisuel typenonverbal"
+                "typeinterpersonel ."
+                ;
+            }
+
+            #gridkommunikationparadigmer {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderetparadigme hvaderetparadigme"
+                "paradigmesamfundsvidenskabelig paradigmehumanistisk"
+                ;
+            }
+
+        #gridmetode {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "metode usability"
+            "videnskabeligmetode kvantikvaliempiri"
+        }
+
+            #gridkommunikationmetode {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvadermetode hvadermetode"
+                "metodeundersøgelsesdesign metodebrugerinddragelse"
+                ; 
+            }
+
+            #gridkommunikationusability {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderusability hvorforusability"
+                "usabilitybrugeroplevelse usabilitybrugeroplevelse"
+                "usabilitydefinitionoverskrift ."
+                "usabilitydefinitionbrugssituation usabilitydefinitionkriterier"
+                "usabilitydefinitionbrugssituation usabilitydefinitionprodukt"
+                "usabilitydefinitionbrugssituation ."
+                ;
+            }
+
+            #gridkommunikationvidenskabmetode {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvadervidenskabmetode hvadervidenskabmetode"
+                "videnskabmetodenatur videnskabmetodehuman"
+                "videnskabmetodesamfund ."
+                ;
+            }
+
+            #gridkommunikationkvantikvaliempiri {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "empirikvantimetode empirikvalimetode"
+                ;
+            }
+
+        #gridkommunikationpraesentation {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "praesentationformaal praesentationmundtlig"
+            "praesentationpathosethoslogos praesentationmundtlig"
+            "praesentationappuorper praesentationmundtlig"
+            "praesentationappuorper praesentationpowerpoint"
+            "praesentationmodeller ."
+            ;
+        }
+
+        #gridsome {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "some someplatforme"
+            ;
+        }
+
+            #gridsocialemedier {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvadersome someindholdsstrategi"
+                ;
+            }
+
+            #gridsomeplatforme {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "somefacebook someinstagram"
+                "somelinkedin someyoutube"
+                ;
+            }
+
+        #gridtekstproduktion {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "kommunikationskrift kommunikationweb"
+            "medietypegenre journalistgrundbegreb"
+            ;
+        }
+            
+            #gridtekstkommunikationskrift {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvadertekstproduktion hvorfortekstproduktion"
+                "tekstkomskriftskriftligarbejde tekstkomskriftfortaelleteknik"
+                "tekstkomskriftstorytelling tekstkomskriftfortaelleteknik"
+                "tekstkomskriftstorytelling tekstkomskriftdoedssynder"
+                "tekstkomskriftprocesforstaelse tekstkomskriftloremipsum"
+                ;
+            }
+
+            #gridtekstwebkommunikation {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "tekstwebkomnoegleord tekstwebkomwebpapirtekst"
+                "tekstwebkomnoegleord tekstwebkomindholdet"
+                "tekstwebkomnoegleord tekstwebkomindholdet"
+                "tekstwebkomnoegleord tekstwebkomindholdet"
+                "tekstwebkomnoegleord tekstwebkomtekster"
+                "tekstwebkombrugeren tekstwebkomtekster"
+                "tekstwebkomgenialegenveje ."
+                ;
+            }
+
+            #gridtekstmedietypergenrer {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "teksttypegenreartikel teksttypegenrebrochure"
+                "teksttypegenreannonce teksttypegenretekstweb"
+                "teksttypegenresometekst ."
+                ;
+            }
+/* KOMMUNIKATION SLUT */
+
+/* LOVGIVNING START */
     #gridlovgivning {
         margin-top: 2em;
         margin-bottom: 3em;
@@ -1772,6 +2443,210 @@ ul {
             "socialemedier tekstproduktion ." 
             ;
         }
+            #gridkommunikationsteori {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "kommunikation kommunikationtyper paradigmer"
+                ;
+            }
+
+                #gridkommunikationsteorikommunikation {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 2fr 1fr 1fr 2fr;
+                    grid-template-areas: 
+                    "hvaderkommunikation hvaderkommunikation hvorforkommunikation hvorforkommunikation"
+                    "kommunikationgrundantagelser kommunikationkongruentin kommunikationkongruentin kommunikationsynkrona "
+                    ;
+                }
+
+                #gridkommunikationtyper {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "typeverbal typenonverbal typeskriftlig"
+                    "typevisuel typenonverbal typeskriftlig"
+                    "typevisuel typenonverbal typeinterpersonel"
+                }
+
+                #gridkommunikationparadigmer {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 2fr 1fr 1fr 2fr;
+                    grid-template-areas: 
+                    "hvaderetparadigme hvaderetparadigme hvaderetparadigme hvaderetparadigme"
+                    "paradigmesamfundsvidenskabelig paradigmesamfundsvidenskabelig paradigmehumanistisk paradigmehumanistisk"
+                    ;
+                }
+
+            #gridmetode {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "metode usability videnskabeligmetode"
+                ". kvantikvaliempiri ."
+            }
+                #gridkommunikationmetode {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "hvadermetode metodeundersøgelsesdesign metodebrugerinddragelse"
+                    ;
+                }
+
+                #gridkommunikationusability {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "hvaderusability hvaderusability hvaderusability hvorforusability hvorforusability hvorforusability"
+                    "usabilitybrugeroplevelse usabilitybrugeroplevelse usabilitybrugeroplevelse usabilitybrugeroplevelse usabilitybrugeroplevelse usabilitybrugeroplevelse"
+                    "usabilitydefinitionoverskrift usabilitydefinitionoverskrift . . . ."
+                    "usabilitydefinitionbrugssituation usabilitydefinitionbrugssituation usabilitydefinitionkriterier usabilitydefinitionkriterier usabilitydefinitionprodukt usabilitydefinitionprodukt"
+                    ;
+                }
+
+                #gridkommunikationvidenskabmetode {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvadervidenskabmetode hvadervidenskabmetode hvadervidenskabmetode"
+                    "videnskabmetodenatur videnskabmetodehuman videnskabmetodesamfund"
+                    ;
+                }
+
+                #gridkommunikationkvantikvaliempiri {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas:
+                    "empirikvantimetode empirikvalimetode"
+                }
+
+            #gridkommunikationpraesentation {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "praesentationformaal praesentationmundtlig praesentationpowerpoint"
+                "praesentationpathosethoslogos praesentationmundtlig praesentationpowerpoint"
+                "praesentationpathosethoslogos praesentationmundtlig praesentationmodeller"
+                "praesentationappuorper praesentationmundtlig praesentationmodeller"
+                ;
+            }
+
+            #gridsome {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "some someplatforme ."
+                ; 
+            }
+
+                #gridsocialemedier {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 
+                    "hvadersome someindholdsstrategi"
+                    ;
+                }
+
+                #gridsomeplatforme {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "somefacebook someinstagram somelinkedin"
+                    "someyoutube . ."
+                    ;
+                }
+
+            #gridtekstproduktion {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "kommunikationskrift kommunikationweb medietypegenre"
+                "journalistgrundbegreb procesforstaaelse loremipsum"
+                ;
+            }
+
+                #gridtekstkommunikationskrift {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "hvadertekstproduktion hvorfortekstproduktion tekstkomskriftskriftligarbejde"
+                    "tekstkomskriftfortaelleteknik tekstkomskriftstorytelling tekstkomskriftskriftligarbejde"
+                    "tekstkomskriftfortaelleteknik tekstkomskriftstorytelling tekstkomskriftdoedssynder"
+                    "tekstkomskriftfortaelleteknik tekstkomskriftstorytelling tekstkomskriftdoedssynder"
+                    "tekstkomskriftprocesforstaelse tekstkomskriftloremipsum tekstkomskriftloremipsum"
+                    ;
+                }
+
+                #gridtekstwebkommunikation {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "tekstwebkomnoegleord tekstwebkomwebpapirtekst tekstwebkomindholdet"
+                    "tekstwebkomnoegleord tekstwebkomwebpapirtekst tekstwebkomindholdet"
+                    "tekstwebkomnoegleord tekstwebkomwebpapirtekst tekstwebkomgenialegenveje"
+                    "tekstwebkomnoegleord tekstwebkombrugeren tekstwebkomtekster"
+                    ;
+                }
+
+                #gridtekstmedietypergenrer {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "teksttypegenreartikel teksttypegenrebrochure teksttypegenreannonce"
+                    "teksttypegenretekstweb teksttypegenresometekst teksttypegenreannonce"
+                    ;
+                }
     /* KOMMUNIKATION SLUT */
     
     /* LOVGIVNING START */

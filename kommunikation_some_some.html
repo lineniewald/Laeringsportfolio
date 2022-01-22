@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kommunikation</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a class="active" href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+        
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kommunikation_kommunikationsteori.html">Kommunikationsteori</a>
+            <a href="kommunikation_metode.html">Metode</a>
+            <a href="kommunikation_praesentationsteknik.html">Præsentationsteknik</a>
+            <a class="active" href="kommunikation_some.html">Sociale medier</a>
+            <a href="kommunikation_tekstproduktion.html">Tekstproduktion</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a class="active" href="kommunikation_some_some.html">SoMe</a>
+            <a href="kommunikation_some_someplatforme.html">SoMe-platforme</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kommunikation_some.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START  -->
+    <section class="overskriftside">SoMe</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridsocialemedier">
+        <section id="hvadersome">
+            <h1>Hvad er det?</h1>
+            <p>Sociale medier, eller SoMe, er fællesbetegnelsen for digitale tjenester hvor en bruger selv skaber og deler sit indhold med andre. Der understøttes fællesskab, interaktion og dialog.</p>
+            <p>SoMe gør det muligt for store virksomheder at komme i direkte dialog med deres kunder. De møder kunderne, der hvor de er – på deres hjemmebane, som kan være en ulempe. Brugerne har magten over de sociale medier.</p>
+            <p>Det er vigtigt at finde ud af hvad de forskellige medier kan før man vælger hvilket et der passer bedst til ens virksomhed. Målgrupperne skal hænge sammen.</p>
+        </section>
+        <section id="someindholdsstrategi">
+            <h1>Indholdsstrategi</h1>
+            <h2>Hvad er det?</h2>
+            <p>Overvejelser om hvilket indhold der skal laves, hvordan målgruppen skal rammes og hvordan indholdet produceres og vedligeholdes.</p>
+            <h2>Overordnede elementer - ARIK-modellen</h2>
+            <p>Afsæt
+                <ul>
+                    <li>Formål - hvad vil man opnå?</li>
+                    <li>Målgruppe og relevans - hvem vil man ramme?</li>
+                    <li>Kompetencer og ressourcer - hvilke kompetencer har medarbejderne?</li>
+                </ul>
+            <p>Redaktion
+                <ul>
+                    <li>Redaktionel kalender<br>
+                        - Giver overblik over aktiviteter<br>
+                        - Udarbejdes for et halvt til et helt år ud i fremtiden<br>
+                        - Hold den så simpel som muligt<br>
+                        - Tag stilling til hvem der laver hvad, hvordan følges der op og hvilke mål man har.</li>
+                    <li>Ansvar<br>
+                        - Arbejdsopgaver kan uddeles<br>
+                        - Indholdets kvalitet sikres</li>
+                </ul>
+            </p>
+            <p>Indhold
+                <ul>
+                    <li>Det gode indhold, tilpasset og visuelt fængende</li>
+                </ul>
+            </p>
+            <p>Kontrol
+                <ul>
+                    <li>Analyse og opfølgning - kontrol af om målene er opnået</li>
+                </ul>
+            </p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->
+
+  <!-- KILDER START -->
+        <section id="kilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Online Markedsføring, kap. 6</p>
+            </section>
+            <section class="kilder">
+                <a href="https://heytilde.com/blog/2020/09/28/aldersgrupper-pa-de-sociale-medier-i-danmark-2020 " target="_blank"><section>https://heytilde.com/blog/2020/09/28/aldersgrupper-pa-de-sociale-medier-i-danmark-2020 </section></a> 
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>

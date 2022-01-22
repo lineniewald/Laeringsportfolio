@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kommunikation</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a class="active" href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a href="kommunikation_kommunikationsteori.html">Kommunikationsteori</a>
+            <a class="active" href="kommunikation_metode.html">Metode</a>
+            <a href="kommunikation_praesentationsteknik.html">Præsentationsteknik</a>
+            <a href="kommunikation_some.html">Sociale medier</a>
+            <a href="kommunikation_tekstproduktion.html">Tekstproduktion</a>
+        </section>
+
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a class="active" href="kommunikation_metode_metode.html">Metode</a>
+            <a href="kommunikation_metode_usability.html">Usability</a>
+            <a href="kommunikation_metode_videnskabeligmetode.html">Videnskabelige metoder</a>
+            <a href="kommunikation_metode_kvantikvaliempiri.html">Kvantitativ og kvalitativ empiri</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="kommunikation_metode.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Metode</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridkommunikationmetode">
+        <section id="hvadermetode">
+            <h1>Hvad er det?</h1>
+            <p>Metode er en række teknikker som anvendes når der skal indsamles, bearbejdes og analyseres forskellige typer af data.</p>
+        </section>
+        <section id="metodeundersøgelsesdesign">
+            <h1>Undersøgelsesdesign</h1>
+            <h2>Hvad er det?</h2>
+            <p>Det er en samlet betegnelse for det arbejde der ligger bag en evaluering af et website.</p>
+            <h2>Fremgangsmåde:</h2>
+            <p>
+                <ol>
+                    <li>Vælg fokusområde - hvad vil jeg undersøge?</li>
+                    <li>Vælg testmetode - hvordan vil jeg undersøge det?</li>
+                    <li>Forbered opgaver og udførelse vha. testmetoderne.</li>
+                </ol>
+            </p>
+        </section>
+        <section id="metodebrugerinddragelse">
+            <h1>Brugerinddragelse</h1>
+            <h2>Hvad er det?</h2>
+            <p>Man ønsker at forstå brugernes behov, motivation og adfærd – dette gøres ved at inddrage dem i brugertests.</p>
+            <p>Brugerne inddrages for at få feedback på de elementer man designer på websitet. Fx navigation, prioritering, kommunikation eller andre ting.</p>
+            <p>Brugerne ses som medudviklere af de nye løsninger og processer. De er med til at kvalitetssikre det endelige produkt.</p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->   
+
+ <!-- KILDER START -->
+        <section id="kilder">
+            <section class="overskriftside">Kilder</section>
+            <section class="kilder">
+                <p>Kommunikation i Multimediedesign, Anne Mette Busch</p>
+            </section>
+            <section class="kilder">
+                <p>Usability, Ole Gregersen og Ian Wisler-Poulsen</p>
+            </section>
+        </section>
+ <!-- KILDER SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+        </section>
+    </footer>
+</body>
+
+
+</html>
