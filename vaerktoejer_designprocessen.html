@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Designprocessen</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a class="active" href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a class="active" href="vaerktoejer_designprocessen.html">Designprocessen</a>
+            <a href="vaerktoejer_kamera.html">Kamera</a>
+            <a href="vaerktoejer_metodertests.html">Metoder</a>
+            <a href="vaerktoejer_modeller.html">Modeller</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="vaerktoejer.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Designprocessen</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="griddesignprocessen">
+        <section id="designthinking">
+            <p><a href="vaerktoejer_designprocessen_designthinking.html" target="_self"><button class="linkknap" id="linktildesignthinking">Design Thinking</button></a></p>
+        </section>
+        <section id="informationsarkitektur">
+            <p><a href="vaerktoejer_designprocessen_informationsarkitektur.html" target="_self"><button class="linkknap" id="linktilinformationsarkitektur">Informationsarkitektur</button></a></p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+            <!--<section class="centered">Læringsportfolio</section>-->
+        </section>
+    </footer>
+</body>
+
+
+</html>

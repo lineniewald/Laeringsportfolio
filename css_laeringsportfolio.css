@@ -1378,6 +1378,346 @@ body {
     #modeller {
         grid-area: modeller;
     }
+
+        #griddesignprocessen {
+            display: grid;
+            grid-gap: 1em;
+            margin-top: 1em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            ". designthinking ."
+            ". informationsarkitektur ."
+            ;
+        }
+            #designthinking {
+                grid-area: designthinking;
+            }
+            #informationsarkitektur {
+                grid-area: informationsarkitektur;
+            }
+
+                #griddesignthinking {
+                    display: grid;
+                    grid-gap: 1em;
+                    margin: 1em;
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "hvaderdesignthinking"
+                    "udviklingsfaseroverskrift"
+                    "udviklingsfaserbillede"
+                    "udviklingsfaseremphathize"
+                    "udviklingsfaserdefine"
+                    "udviklingsfaserideate"
+                    "udviklingsfaserprototype"
+                    "udviklingsfasertest"
+                    ;
+                }
+                    #hvaderdesignthinking {
+                        grid-area: hvaderdesignthinking;
+                    }
+                    #udviklingsfaseroverskrift {
+                        grid-area: udviklingsfaseroverskrift;
+                    }
+                    #udviklingsfaserbillede {
+                        grid-area: udviklingsfaserbillede;
+                    }
+                    #udviklingsfaseremphathize {
+                        grid-area: udviklingsfaseremphathize;
+                    }
+                    #udviklingsfaserdefine {
+                        grid-area: udviklingsfaserdefine;
+                    }
+                    #udviklingsfaserideate {
+                        grid-area: udviklingsfaserideate;
+                    }
+                    #udviklingsfaserprototype {
+                        grid-area: udviklingsfaserprototype;
+                    }
+                    #udviklingsfasertest {
+                        grid-area: udviklingsfasertest;
+                    }
+                
+                #gridinformationsarkitektur {
+                    display: grid;
+                    grid-gap: 1em;
+                    margin: 1em;
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "hvaderia"
+                    "iaprodukteroverskrift"
+                    "iaprodukteruserstory"
+                    "iaprodukterfeatureunfeature"
+                    "iaprodukterindholdshierarki"
+                    "iaproduktersitemap"
+                    "sitemaptekst"
+                    "iaprodukteruserflow"
+                    "iaprodukterwireframes"
+                    "wireframetekst"
+                    ;
+                }
+                    #hvaderia {
+                        grid-area: hvaderia;
+                    }
+                    #iaprodukteroverskrift {
+                        grid-area: iaprodukteroverskrift;
+                    }
+                    #iaprodukteruserstory {
+                        grid-area: iaprodukteruserstory;
+                    }
+                    #iaprodukterfeatureunfeature {
+                        grid-area: iaprodukterfeatureunfeature;
+                    }
+                    #iaprodukterindholdshierarki {
+                        grid-area: iaprodukterindholdshierarki;
+                    }
+                    #iaproduktersitemap {
+                        grid-area: iaproduktersitemap;
+                    }
+                    #sitemaptekst {
+                        grid-area: sitemaptekst;
+                    }
+                    #iaprodukteruserflow {
+                        grid-area: iaprodukteruserflow;
+                    }
+                    #iaprodukterwireframes {
+                        grid-area: iaprodukterwireframes;
+                    }
+                    #wireframetekst {
+                        grid-area: wireframetekst;
+                    }
+
+        #gridkamera {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "kameraopbygning"
+            "lukkerblaendeiso"
+            "eksponering"
+            "kompositionoverskrift"
+            "hvaderkomposition"
+            "hvorforkomposition"
+            "kompositionsregleroverskrift"
+            "ruleofthirds"
+            "detgyldnesnit"
+            "leadinglines"
+            "tekstur"
+            "farve"
+            "form"
+            "symmetri"
+            "kontrast"
+            "kameraworkshop"
+            ;
+        }
+            #kameraopbygning {
+                grid-area: kameraopbygning;
+            }
+            #lukkerblaendeiso {
+                grid-area: lukkerblaendeiso;
+            }
+            #eksponering {
+                grid-area: eksponering;
+            }
+            #kompositionoverskrift {
+                grid-area: kompositionoverskrift;
+            }
+            #hvaderkomposition {
+                grid-area: hvaderkomposition;
+            }
+            #hvorforkomposition {
+                grid-area: hvorforkomposition;
+            }
+            #kompositionsregleroverskrift {
+                grid-area: kompositionsregleroverskrift;
+            }
+            #ruleofthirds {
+                grid-area: ruleofthirds;
+            }
+            #detgyldnesnit {
+                grid-area: detgyldnesnit;
+            }
+            #leadinglines {
+                grid-area: leadinglines;
+            }
+            #tekstur {
+                grid-area: tekstur;
+            }
+            #farve {
+                grid-area: farve;
+            }
+            #form {
+                grid-area: form;
+            }
+            #symmetri {
+                grid-area: symmetri;
+            }
+            #kontrast {
+                grid-area: kontrast;
+            }
+            #kameraworkshop {
+                grid-area: kameraworkshop;
+            }
+
+        #gridmetodetest {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "metodetestbrainstorm"
+            "metodetestbrugertest"
+            "metodetestdeskresearch"
+            "metodetestfokusgrupper"
+            "metodetestgangstertest"
+            "metodetestinterview"
+            "metodetestkortsortering"
+            "metodetestmindmap"
+            "metodetestmoodboard"
+            "metodetestobservationsstudie"
+            "metodetestpersona"
+            "metodetestreceptionsundersoegelse"
+            "metodetestspoergeskema"
+            "metodetesttaenkehoejt"
+            ;
+        }
+            #metodetestbrainstorm {
+                grid-area: metodetestbrainstorm;
+            }
+            #metodetestbrugertest {
+                grid-area: metodetestbrugertest;
+            }
+            #metodetestdeskresearch {
+                grid-area: metodetestdeskresearch;
+            }
+            #metodetestfokusgrupper {
+                grid-area: metodetestfokusgrupper;
+            }
+            #metodetestgangstertest {
+                grid-area: metodetestgangstertest;
+            }
+            #metodetestinterview {
+                grid-area: metodetestinterview;
+            }
+            #metodetestkortsortering {
+                grid-area: metodetestkortsortering;
+            }
+            #metodetestmindmap {
+                grid-area: metodetestmindmap;
+            }
+            #metodetestmoodboard {
+                grid-area: metodetestmoodboard;
+            }
+            #metodetestobservationsstudie {
+                grid-area: metodetestobservationsstudie;
+            }
+            #metodetestpersona {
+                grid-area: metodetestpersona;
+            }
+            #metodetestreceptionsundersoegelse {
+                grid-area: metodetestreceptionsundersoegelse;
+            }
+            #metodetestspoergeskema {
+                grid-area: metodetestspoergeskema;
+            }
+            #metodetesttaenkehoejt {
+                grid-area: metodetesttaenkehoejt;
+            }
+
+        #gridmodeller {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "modelabstraktionsstige"
+            "modelaida"
+            "modelaktant"
+            "modelberetter"
+            "modelcirkulaer"
+            "modelenvejskommunikation"
+            "modelfisk"
+            "modelheyyouseeso"
+            "modelimk"
+            "modeljoharisvindue"
+            "modelkanylen"
+            "modelkommode"
+            "modelkotler"
+            "modellaswellsformel"
+            "modelminerva"
+            "modelnyhedstrekant"
+            "modelsrsor"
+            "srsortekst"
+            "modelseksfaktor"
+            "modelspiral"
+            "modelthorlacius"
+            
+            ;
+        } 
+            #modelabstraktionsstige {
+                grid-area: modelabstraktionsstige;
+            }
+            #modelaida {
+                grid-area: modelaida;
+            }
+            #modelaktant {
+                grid-area: modelaktant;
+            }
+            #modelberetter {
+                grid-area: modelberetter;
+            }
+            #modelcirkulaer {
+                grid-area: modelcirkulaer;
+            }
+            #modelenvejskommunikation {
+                grid-area: modelenvejskommunikation;
+            }
+            #modelfisk {
+                grid-area: modelfisk;
+            }
+            #modelheyyouseeso {
+                grid-area: modelheyyouseeso;
+            }
+            #modelimk {
+                grid-area: modelimk;
+            }
+            #modeljoharisvindue {
+                grid-area: modeljoharisvindue;
+            }
+            #modelkanylen {
+                grid-area: modelkanylen;
+            }
+            #modelkommode {
+                grid-area: modelkommode;
+            }
+            #modelkotler {
+                grid-area: modelkotler;
+            }
+            #modellaswellsformel {
+                grid-area: modellaswellsformel;
+            }
+            #modelminerva {
+                grid-area: modelminerva;
+            }
+            #modelnyhedstrekant {
+                grid-area: modelnyhedstrekant;
+            }
+            #modelsrsor {
+                grid-area: modelsrsor;
+            }
+                #srsortekst {
+                    grid-area: srsortekst;
+                }
+            #modelseksfaktor {
+                grid-area: modelseksfaktor;
+            }
+            #modelspiral {
+                grid-area: modelspiral;
+            }
+            #modelthorlacius {
+                grid-area: modelthorlacius;
+            }
+    
 /* VÆRKTØJER SLUT*/
 
 
@@ -2179,6 +2519,113 @@ ol {
         "metoder modeller" 
         ;
     }
+
+        #griddesignprocessen {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "designthinking informationsarkitektur"
+            ;
+        }
+            #griddesignthinking {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderdesignthinking hvaderdesignthinking"
+                "udviklingsfaseroverskrift udviklingsfaseroverskrift"
+                "udviklingsfaserbillede udviklingsfaserbillede"
+                "udviklingsfaseremphathize udviklingsfaserdefine"
+                "udviklingsfaserideate udviklingsfaserprototype"
+                "udviklingsfasertest ."
+                ;
+            }
+
+            #gridinformationsarkitektur {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderia hvaderia"
+                "iaprodukteroverskrift iaprodukteroverskrift"
+                "iaprodukteruserstory iaprodukterfeatureunfeature"
+                "iaprodukterindholdshierarki iaproduktersitemap"
+                "iaprodukterindholdshierarki sitemaptekst"
+                "iaprodukteruserflow iaprodukterwireframes"
+                "iaprodukteruserflow wireframetekst"
+                ;
+            }
+        
+        #gridkamera {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "kameraopbygning kameraopbygning"
+            "lukkerblaendeiso eksponering"
+            "kompositionoverskrift kompositionoverskrift"
+            "hvaderkomposition hvorforkomposition"
+            "kompositionsregleroverskrift ."
+            "ruleofthirds detgyldnesnit"
+            "leadinglines tekstur"
+            "farve form"
+            "symmetri kontrast"
+            "kameraworkshop ."
+            ;
+        }
+
+        #gridmetodetest {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "metodetestbrainstorm metodetestbrugertest"
+            "metodetestdeskresearch metodetestfokusgrupper"
+            "metodetestgangstertest metodetestinterview"
+            "metodetestkortsortering metodetestinterview"
+            "metodetestmindmap metodetestinterview"
+            "metodetestmoodboard metodetestinterview"
+            "metodetestobservationsstudie metodetestinterview"
+            "metodetestpersona metodetestinterview"
+            "metodetestreceptionsundersoegelse metodetestinterview"
+            "metodetestspoergeskema metodetesttaenkehoejt"
+            ;
+        }
+
+        #gridmodeller {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "modelabstraktionsstige modelaida"
+            "modelaktant modelberetter"
+            "modelcirkulaer modelenvejskommunikation"
+            "modelfisk modelheyyouseeso"
+            "modelimk modeljoharisvindue"
+            "modelimk modelkommode"
+            "modelkanylen modelkommode"
+            "modelkotler modellaswellsformel"
+            "modelminerva modelnyhedstrekant"
+            "modelminerva modelseksfaktor"
+            "modelsrsor modelspiral"
+            "srsortekst modelspiral"
+            "srsortekst modelthorlacius"
+            ;
+        }
+
     /* VÆRKTØJER SLUT */
 }
 /* TABLET SLUT */
@@ -2752,6 +3199,102 @@ ol {
             ". modeller ." 
             ;
         }
+
+            #griddesignprocessen {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                ". designthinking informationsarkitektur ."
+                ;
+            }
+                #griddesignthinking {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "hvaderdesignthinking hvaderdesignthinking hvaderdesignthinking"
+                    "udviklingsfaseroverskrift udviklingsfaserbillede udviklingsfaserbillede"
+                    "udviklingsfaseremphathize udviklingsfaserbillede udviklingsfaserbillede"
+                    "udviklingsfaserdefine udviklingsfaserideate udviklingsfaserprototype"
+                    "udviklingsfasertest . ."
+                    ;
+                }
+
+                #gridinformationsarkitektur {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "hvaderia hvaderia hvaderia"
+                    "iaprodukteroverskrift iaprodukteroverskrift iaprodukteroverskrift"
+                    "iaprodukteruserstory iaprodukterfeatureunfeature iaprodukterindholdshierarki"
+                    "iaproduktersitemap iaprodukteruserflow iaprodukterwireframes"
+                    "sitemaptekst iaprodukteruserflow wireframetekst"
+                    ;
+                }
+
+            #gridkamera {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 3em;
+                grid-template-columns: 2fr 1fr 1fr 2fr;
+                grid-template-areas:
+                "kameraopbygning lukkerblaendeiso lukkerblaendeiso eksponering"
+                "kompositionoverskrift kompositionoverskrift kompositionoverskrift kompositionoverskrift"
+                "hvaderkomposition hvaderkomposition hvorforkomposition hvorforkomposition"
+                "kompositionsregleroverskrift kompositionsregleroverskrift . ."
+                "ruleofthirds detgyldnesnit detgyldnesnit leadinglines"
+                "tekstur farve farve form"
+                "symmetri kontrast kontrast ."
+                "kameraworkshop kameraworkshop . ."
+                ;
+            }
+
+            #gridmetodetest {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 3em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                "metodetestbrainstorm metodetestbrugertest metodetestdeskresearch"
+                "metodetestfokusgrupper metodetestgangstertest metodetestdeskresearch"
+                "metodetestfokusgrupper metodetestgangstertest metodetestinterview"
+                "metodetestkortsortering metodetestmindmap metodetestinterview"
+                "metodetestkortsortering metodetestobservationsstudie metodetestinterview"
+                "metodetestmoodboard metodetestobservationsstudie metodetestinterview"
+                "metodetestpersona metodetestobservationsstudie metodetestinterview"
+                "metodetestpersona metodetestreceptionsundersoegelse metodetestinterview"
+                "metodetestspoergeskema metodetesttaenkehoejt metodetestinterview"
+                ;
+            }
+
+            #gridmodeller {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 3em;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                "modelabstraktionsstige modelaida modelaktant"
+                "modelberetter modelcirkulaer modelheyyouseeso"
+                "modelenvejskommunikation modelfisk modelimk"
+                "modeljoharisvindue modelkanylen modelkommode"
+                "modelkotler modellaswellsformel modelminerva"
+                "modelnyhedstrekant modelseksfaktor modelspiral"
+                "modelsrsor modelthorlacius modelthorlacius"
+                "srsortekst modelthorlacius modelthorlacius"
+                ". modelthorlacius modelthorlacius"
+                ;
+            }
     /* VÆRKTØJER SLUT */
 }
 /* DESKTOP SLUT */
