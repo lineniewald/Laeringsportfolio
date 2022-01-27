@@ -117,14 +117,13 @@ body {
     display: grid;
     grid-gap: 1em;
     margin-top: 3em;
-    margin-left: 7em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "design"
-    "kode"
-    "kommunikation"
-    "lovgivning"
-    "vaerktoejer"
+    ". design ."
+    ". kode ."
+    ". kommunikation ."
+    ". lovgivning ."
+    ". vaerktoejer ."
     ;
 }   
     #design {
@@ -1364,6 +1363,7 @@ body {
     ". kamera ."
     ". metoder ."
     ". modeller ."
+    ". programmer ."
     ;
 }
     #designprocessen {
@@ -1378,6 +1378,9 @@ body {
     #modeller {
         grid-area: modeller;
     }
+    #programmer {
+        grid-area: programmer;
+    }
 
         #griddesignprocessen {
             display: grid;
@@ -1387,6 +1390,7 @@ body {
             grid-template-areas: 
             ". designthinking ."
             ". informationsarkitektur ."
+            ". organisering ."
             ;
         }
             #designthinking {
@@ -1394,6 +1398,9 @@ body {
             }
             #informationsarkitektur {
                 grid-area: informationsarkitektur;
+            }
+            #organisering {
+                grid-area: organisering;
             }
 
                 #griddesignthinking {
@@ -1485,7 +1492,40 @@ body {
                     #wireframetekst {
                         grid-area: wireframetekst;
                     }
-
+                
+                #gridorganisering {
+                    display: grid;
+                    grid-gap: 1em;
+                    margin: 1em;
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "hvaderlatch"
+                    "latchlocation"
+                    "latchalphabet"
+                    "latchtime"
+                    "latchcategory"
+                    "latchhierarchy"
+                    ;
+                }
+                    #hvaderlatch {
+                        grid-area: hvaderlatch;
+                    }
+                    #latchlocation {
+                        grid-area: latchlocation;
+                    }
+                    #latchalphabet {
+                        grid-area: latchalphabet;
+                    }
+                    #latchtime {
+                        grid-area: latchtime;
+                    }
+                    #latchcategory {
+                        grid-area: latchcategory;
+                    }
+                    #latchhierarchy {
+                        grid-area: latchhierarchy;
+                    }
+            
         #gridkamera {
             display: grid;
             grid-gap: 1em;
@@ -1717,6 +1757,57 @@ body {
             #modelthorlacius {
                 grid-area: modelthorlacius;
             }
+        
+        #gridprogrammer {
+            display: grid;
+            grid-gap: 1em;
+            margin: 1em;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            ". illustrator ."
+            ". photoshop ."
+            ;
+        }
+            #illustrator {
+                grid-area: illustrator;
+            }
+            #photoshop {
+                grid-area: photoshop;
+            }
+
+                #gridillustrator {
+                    display: grid;
+                    grid-gap: 1em;
+                    margin: 1em;
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "hvaderillustrator"
+                    "illustratorworkshop"
+                    ;
+                }
+                    #hvaderillustrator {
+                        grid-area: hvaderillustrator;
+                    }
+                    #illustratorworkshop {
+                        grid-area: illustratorworkshop;
+                    }
+                
+                    #gridphotoshop {
+                        display: grid;
+                        grid-gap: 1em;
+                        margin: 1em;
+                        grid-template-columns: 1fr;
+                        grid-template-areas:
+                        "hvaderphotoshop"
+                        "photoshopworkshop"
+                        ;
+                    }
+                        #hvaderphotoshop {
+                            grid-area: hvaderphotoshop;
+                        }
+                        #photoshopworkshop {
+                            grid-area: photoshopworkshop;
+                        }
     
 /* VÆRKTØJER SLUT*/
 
@@ -2517,6 +2608,7 @@ ol {
         grid-template-areas: 
         "designprocessen kamera" 
         "metoder modeller" 
+        "programmer ."
         ;
     }
 
@@ -2528,6 +2620,7 @@ ol {
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
             "designthinking informationsarkitektur"
+            "organisering ."
             ;
         }
             #griddesignthinking {
@@ -2560,6 +2653,20 @@ ol {
                 "iaprodukterindholdshierarki sitemaptekst"
                 "iaprodukteruserflow iaprodukterwireframes"
                 "iaprodukteruserflow wireframetekst"
+                ;
+            }
+
+            #gridorganisering {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderlatch hvaderlatch"
+                "latchlocation latchalphabet"
+                "latchtime latchcategory"
+                "latchhierarchy ."
                 ;
             }
         
@@ -2625,6 +2732,41 @@ ol {
             "srsortekst modelthorlacius"
             ;
         }
+
+        #gridprogrammer {
+            margin-top: 2em;
+            margin-bottom: 3em;
+            margin-left: 3em;
+            grid-gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "illustrator photoshop"
+            ;
+        }
+
+            #gridillustrator {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderillustrator hvaderillustrator"
+                "illustratorworkshop illustratorworkshop"
+                ;
+            }
+
+            #gridphotoshop {
+                margin-top: 2em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 2em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "hvaderphotoshop hvaderphotoshop"
+                "photoshopworkshop photoshopworkshop"
+                ;
+            }
 
     /* VÆRKTØJER SLUT */
 }
@@ -2796,10 +2938,10 @@ ol {
         #gridaestetikwebdesign {
             margin: 2em;
             grid-gap: 3em;
-            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas:
-            "hvaderaestetikweb hvaderaestetikweb hvorforaestetikweb hvorforaestetikweb"
-            "aestetikfunktion aestetikfunktion elementerwebdesign elementerwebdesign"
+            " hvaderaestetikweb hvorforaestetikweb"
+            "aestetikfunktion elementerwebdesign"
         }
 
     /* DESIGN SLUT */
@@ -3196,7 +3338,7 @@ ol {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: 
             "designprocessen kamera metoder" 
-            ". modeller ." 
+            "modeller programmer ." 
             ;
         }
 
@@ -3205,9 +3347,9 @@ ol {
                 margin-bottom: 3em;
                 margin-left: 3em;
                 grid-gap: 2em;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
                 grid-template-areas: 
-                ". designthinking informationsarkitektur ."
+                "designthinking informationsarkitektur organisering"
                 ;
             }
                 #griddesignthinking {
@@ -3237,6 +3379,19 @@ ol {
                     "iaprodukteruserstory iaprodukterfeatureunfeature iaprodukterindholdshierarki"
                     "iaproduktersitemap iaprodukteruserflow iaprodukterwireframes"
                     "sitemaptekst iaprodukteruserflow wireframetekst"
+                    ;
+                }
+
+                #gridorganisering {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 2em;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-areas: 
+                    "hvaderlatch hvaderlatch hvaderlatch"
+                    "latchlocation latchalphabet latchtime"
+                    "latchcategory latchhierarchy ."
                     ;
                 }
 
@@ -3295,6 +3450,39 @@ ol {
                 ". modelthorlacius modelthorlacius"
                 ;
             }
+
+            #gridprogrammer {
+                margin-top: 3em;
+                margin-bottom: 3em;
+                margin-left: 3em;
+                grid-gap: 3em;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                ". illustrator photoshop ."
+                ;
+            }
+
+                #gridillustrator {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvaderillustrator hvaderillustrator illustratorworkshop illustratorworkshop"
+                    ;
+                }
+
+                #gridphotoshop {
+                    margin-top: 3em;
+                    margin-bottom: 3em;
+                    margin-left: 3em;
+                    grid-gap: 3em;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-areas:
+                    "hvaderphotoshop hvaderphotoshop photoshopworkshop photoshopworkshop"
+                    ;
+                }
     /* VÆRKTØJER SLUT */
 }
 /* DESKTOP SLUT */

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Organisering</title>
+
+    <link rel="stylesheet" href="css_laeringsportfolio.css">
+</head>
+
+<body>
+    <header>
+        <section class="headercontainer">
+            <img src="header1.png" alt="header" style="width:100%;">
+            <a href="index.html" target="_self"><section class="centered">Læringsportfolio</section></a>
+        </section>
+
+     <!-- TOP NAVIGATION START -->
+        <section class="topnav"> 
+            <a href="design.html">Design</a>
+            <a href="kode.html">Kode</a>
+            <a href="kommunikation.html">Kommunikation</a>
+            <a href="lovgivning.html">Lovgivning</a>
+            <a class="active" href="vaerktoejer.html">Værktøjer</a>
+            <input type="text" placeholder="Søg...">
+        </section>
+        <section class="topnavkategori"> <!-- Kategori navigation -->
+            <a class="active" href="vaerktoejer_designprocessen.html">Designprocessen</a>
+            <a href="vaerktoejer_kamera.html">Kamera</a>
+            <a href="vaerktoejer_metodertests.html">Metoder</a>
+            <a href="vaerktoejer_modeller.html">Modeller</a>
+            <a href="vaerktoejer_programmer.html">Programmer</a>
+        </section>
+        <section class="topnavemne"> <!-- Indhold navigation -->
+            <a href="vaerktoejer_designprocessen_designthinking.html">Design Thinking</a>
+            <a href="vaerktoejer_designprocessen_informationsarkitektur.html">Informationsarkitektur</a>
+            <a class="active" href="vaerktoejer_designprocessen_organisering.html">Organisering</a>
+        </section>
+     <!-- TOP NAVIGATION SLUT -->
+    </header>
+
+ <!-- TILBAGE KNAP MOBIL START -->
+    <a href="vaerktoejer_designprocessen.html">
+        <img src="tilbageknap.png" alt="Tilbageknap" class="tilbageknap">
+    </a>
+ <!-- TILBAGE KNAP MOBIL SLUT -->
+
+ <!-- OVERSKRIFT START -->
+    <section class="overskriftside">Organisering af indhold</section>
+ <!-- OVERSKRIFT SLUT -->
+
+ <!-- GRID START -->
+    <div id="gridorganisering">
+        <section id="hvaderlatch">
+            <h1>LATCH</h1>
+            <p>LATCH står for Location, Alphabet, Time, Category og Hierarchy. Det er 5 forskellige måder at organisere på.</p>
+        </section>
+
+        <section id="latchlocation">
+            <h2>Location</h2>
+            <p>
+                <ul>
+                    <li>Organisering baseret på lokation</li>
+                    <li>Eksempel:<br>
+                        - Placering på kort<br>
+                        - Placering på kroppen<br>
+                        - Samlevejledninger</li>
+                </ul>
+            </p>
+        </section>
+        <section id="latchalphabet">
+            <h2>Alphabet</h2>
+            <p>
+                <ul>
+                    <li>Organisering baseret på alfabetisk rækkefølge</li>
+                    <li>Bruges især til store mængder information</li>
+                    <li>Eksempel:<br>
+                        - Ordbog<br>
+                        - Lesikon<br>
+                        - Telefonbog<br>
+                        - Skønlitteratur (efter forfatters efternavn)</li>
+                </ul>
+            </p>
+        </section>
+        <section id="latchtime">
+            <h2>Time</h2>
+            <p>
+                <ul>
+                    <li>Organisering baseret på tidsmæssig karakter</li>
+                    <li>Effektivt på sociale medier - se nyeste opslag først</li>
+                    <li>Eksempel:<br>
+                        - Kalender<br>
+                        - Nyheder<br>
+                        - Tidslinje<br>
+                        - Opskrift<br>
+                        - Musik/noder</li>
+                </ul>
+            </p>
+        </section>
+        <section id="latchcategory">
+            <h2>Category</h2>
+            <p>
+                <ul>
+                    <li>Organisering baseret på kategorisering i grupper</li>
+                    <li>Den mest brugte metode</li>
+                    <li>Kategorierne skal give mening for brugerne og ikke kun en selv</li>
+                    <li>Kræver undersøgelse for at ramme de helt rigtige inddelinger - vi tænker forskelligt</li>
+                    <li>Brug fx kortsortering</li>
+                    <li>Eksempel:<br>
+                        - Udseende/farver<br>
+                        - Funktionalitet<br>
+                        - Menuer på websites<br>
+                        - Musik genrer</li>
+                </ul>
+            </p>
+        </section>
+        <section id="latchierarchy">
+            <h2>Hierarchy</h2>
+            <p>
+                <ul>
+                    <li>Organisering baseret på rækkefølge</li>
+                    <li>Inddeling efter fx størrelse, højeste/laveste pris, popularitet osv.</li>
+                    <li>Eksempel:<br>
+                        - Over-, underskrift og brødtekst<br>
+                        - Virksomhedshierarki<br>
+                        - Stamtavle</li>
+                </ul>
+            </p>
+        </section>
+    </div>
+ <!-- GRID SLUT -->
+
+ <!-- KILDER START -->
+    <section id="kilder">
+        <section class="overskriftside">Kilder</section>
+        <section class="kilder">
+            <a href="https://medium.com/@niveditachandra/latch-information-architecture-from-the-eyes-of-an-urban-indian-user-efd474a7bb37" target="_blank"><section>https://medium.com/@niveditachandra/latch-information-architecture-from-the-eyes-of-an-urban-indian-user-efd474a7bb37</section></a> 
+        </section>
+        <section class="kilder">
+            <a href="https://parsonsdesign4.wordpress.com/resources/latch-methods-of-organization/" target="_blank"><section>https://parsonsdesign4.wordpress.com/resources/latch-methods-of-organization/</section></a> 
+        </section>
+    </section>
+
+ <!-- TIL TOPPEN KNAP START -->
+    <button onclick="topFunction()" id="tiltop" title="Tilbage til toppen">^</button>
+    <script>
+        // Få knappen sat ind
+        var mybutton = document.getElementById("tiltop");
+        
+        // Når der scrolles 20px ned fra toppen skal knappen vises
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // Når der klikkes på knappen - scrolles der til toppen
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <!--TIL TOPPEN KNAP SLUT -->
+
+    <footer>
+        <section class="footercontainer">
+            <img src="footer1.png" alt="footer" style="width:100%;">
+            <!--<section class="centered">Læringsportfolio</section>-->
+        </section>
+    </footer>
+</body>
+
+
+</html>
